@@ -1,90 +1,102 @@
+import React, { useState } from 'react';
 import '../CSS/App.css'
-import Aurora from '../JSX/Aurora.jsx';
-import SimpleList from '../JSX/SimpleList.jsx';
-import { useState } from 'react';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('ai');
+  const [activeSection, setActiveSection] = useState('uno');
 
   return (
     <>
-
+    {/* Header Div */}
       <div>
-        <Aurora
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={0.5}
-        />
-      </div>
+        <header className='header'>
 
-      <div>
-        <header>
-          {/* Header goes here */}
-          <h1>Welcome to Web Tools</h1>
-          <h3>Your All-in-One Web Dev Link Library</h3>
+          {/* Pagbati LMAO | Greetings */}
+          <div className='greetings'>
+            <h3>Welcome to</h3>
+            <h1>Web Tools</h1>
+            <h4>Your All-in-One Web Dev Link Library</h4>
+          </div>
+          {/* End of Greetings */}
+
+          {/* Content Navigation */}
+        <div className="content-navigation">
+          <nav>
+            <ul>
+              <li>
+                <button onClick={() => setActiveSection('ai')}>A.I. & Automation</button>
+              </li>
+              <li>
+                <button onClick={() => setActiveSection('va')}>Design & Visual Assets</button>
+              </li>
+              <li>
+                <button onClick={() => setActiveSection('cdt')}>Core Development Tools</button>
+              </li>
+              <li>
+                <button onClick={() => setActiveSection('fl')}>Frameworks & Libraries</button>
+              </li>
+              <li>
+                <button onClick={() => setActiveSection('hd')}>Hosting & Deploymen</button>
+              </li>
+              <li>
+                <button onClick={() => setActiveSection('ld')}>Learning & Documentation</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+          {/* End of Content Navigation */}
+
+          <hr />
+
         </header>
       </div>
 
-      <div>
-            <ul>
-              <li><button onClick={() => setActiveSection('ai')} className={activeSection === 'ai' ? 'active' : ''}>A.I.</button></li>
-              <li><button onClick={() => setActiveSection('assets')} className={activeSection === 'assets' ? 'active' : ''}>Assets</button></li>
-              <li><button onClick={() => setActiveSection('fonts')} className={activeSection === 'fonts' ? 'active' : ''}>Fonts</button></li>
-              <li><button onClick={() => setActiveSection('colors')} className={activeSection === 'colors' ? 'active' : ''}>Colors</button></li>
-              <li><button onClick={() => setActiveSection('animations')} className={activeSection === 'animations' ? 'active' : ''}>Animations</button></li>
-              <li><button onClick={() => setActiveSection('certifications')} className={activeSection === 'certifications' ? 'active' : ''}>Certifications</button></li>
-            </ul>
-      </div>
+    {/* Main Content Div*/}
+        <div>
+          <main>
+            {activeSection === 'ai' && (
+              <section id="ai" className="tab-section">
+                <h2>A.I. & Automation</h2>
+              </section>
+            )}
 
-      <div className='liquid-glass main-container'>
-        <main>
-          <section id='ai' className={activeSection === 'ai' ? 'active' : 'hidden'}>
-            <h1>A.I. Tools</h1>
-            <SimpleList 
-              items={[
-                'ChatGPT',
-                'Gemini',
-                'Claude',
-                'Copilot',
-                'Deepseek'
-              ]}
-            />
-          </section>
+            {activeSection === 'va' && (
+              <section id="va" className="tab-section">
+                <h2>Design & Visual Assets</h2>
+              </section>
+            )}
 
-          <section id='assets' className={activeSection === 'assets' ? 'active' : 'hidden'}>
-            <h1>Assets</h1>
-            <p>Add your assets and resources here</p>
-          </section>
+            {activeSection === 'cdt' && (
+              <section id="cdt" className="tab-section">
+                <h2>Core Development Tools</h2>
+              </section>
+            )}
 
-          <section id='fonts' className={activeSection === 'fonts' ? 'active' : 'hidden'}>
-            <h1>Fonts</h1>
-            <p>Add your font resources here</p>
-          </section>
+            {activeSection === 'fl' && (
+              <section id="fl" className="tab-section">
+                <h2>Frameworks & Libraries</h2>
+              </section>
+            )}
 
-          <section id='colors' className={activeSection === 'colors' ? 'active' : 'hidden'}>
-            <h1>Colors</h1>
-            <p>Add your color resources here</p>
-          </section>
+            {activeSection === 'hd' && (
+              <section id="hd" className="tab-section">
+                <h2>Hosting & Deployment</h2>
+              </section>
+            )}
 
-          <section id='animations' className={activeSection === 'animations' ? 'active' : 'hidden'}>
-            <h1>Animations</h1>
-            <p>Add your animation resources here</p>
-          </section>
+            {activeSection === 'ld' && (
+              <section id="ld" className="tab-section">
+                <h2>Learning & Documentation</h2>
+              </section>
+            )}
+          </main>
+        </div>
 
-          <section id='certifications' className={activeSection === 'certifications' ? 'active' : 'hidden'}>
-            <h1>Certifications</h1>
-            <p>Add your certification resources here</p>
-          </section>
-        </main>
-      </div>
-
+    {/* Footer Div*/}
       <div>
         <footer>
-
+          <p>© Zeus Angelo Bautista | November 2025</p>
         </footer>
       </div>
-      
     </>
   )
 }
