@@ -4,12 +4,24 @@
   --gray: #717171;
 }
 
+/* Make box-sizing predictable to avoid width math causing overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ensure the document doesn't create horizontal scroll from overflowing children */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.header h1, .header h3, .header h4 {
+.header h1, .header h4 {
   display: flex;
   justify-content: center;
 }
@@ -17,12 +29,6 @@ body {
 .header h1 {
   font-size: 4rem;
   margin: 0 auto;
-}
-
-.header h3 {
-  font-size: 2rem;
-  margin: 0 auto;
-  padding-top: 1rem;
 }
 
 .header h4 {
@@ -79,8 +85,8 @@ body {
     transform: transition 0.25s ease-in-out;
 }
 
-.guhit {
-  width: 80%;
+hr{
+  width: 60%;
   border: 0;
   height: 1px;
   background: #111111;
@@ -99,13 +105,12 @@ main {
 
 main section[id] {
   width: 100%;
-  max-width: 900px;
-  min-height: 250px;
+  /* Increase max-width so a wider fixed card and the list can sit side-by-side
+     without clipping on desktop layouts. */
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 1rem 0;
   border-radius: 1rem;
   padding: 2rem 1rem;
   box-sizing: border-box;
@@ -115,6 +120,172 @@ main section[id] > * {
   max-width: 100%;
 }
 
+/* Column */
+.column {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* List at the left */
+.column .scrollmenu {
+  flex: 1 1 220px;
+  max-width: none;
+  min-width: 0;
+  margin-top: 1rem;
+}
+
+/* Card at the right */
+.column .card {
+  /* Fixed card width to avoid layout changes when content grows. */
+  flex: 0 0 750px;
+  max-width: 750px;
+  min-width: 0;
+  box-sizing: border-box;
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.column .card h3,
+.column .card p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Remove Scrollbar */
+.column .scrollmenu {
+  overflow-y: auto;
+  /* For Chrome, Safari, Edge */
+  scrollbar-width: none;           /* Firefox */
+}
+
+/* Hide scroll bar for Webkit (Chrome, Safari, Edge) */
+.column .scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive for mobile: stack vertically and disable sticky card */
+@media (max-width: 700px) {
+  .column {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .column .scrollmenu,
+  .column .card {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+  }
+  .column .card {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+    padding: 0;
+  }
+}
+
+
+
+/* Scrollable List */
+.scrollmenu {
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scrollmenu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.scrollmenu li {
+  display: block;
+}
+
+.scrollmenu button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Keep layout stable when focused - don't change box model */
+.scrollmenu button:focus {
+  outline: none;
+}
+
+/* Provide visible indicator without layout shift */
+.scrollmenu button:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+  background: rgba(255,255,255,0.04);
+}
+
+.scrollmenu button.active {
+  font-weight: 700;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Category bar for filtering DVA */
+.category-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.category-button.active {
+  background: rgba(255,255,255,0.04);
+  font-weight: 700;
+  border-color: rgba(255,255,255,0.12);
+}
+
+@media (max-width: 700px) {
+  .scrollmenu {
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  .scrollmenu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    /* don't force a very wide min-width on small screens */
+    min-width: 0;
+  }
+  .scrollmenu li {
+    flex: 0 0 auto;
+  }
+}
+
+
 /* Footer */
 footer {
   text-align: center;
@@ -122,13 +293,11 @@ footer {
   font-size: 1rem;
 }
 
+
 /* Responsive design for small screens */
 @media (max-width: 700px) {
   .header h1 {
     font-size: 2rem;
-  }
-  .header h3 {
-    font-size: 1.2rem;
   }
   .header h4 {
     font-size: 0.9rem;
