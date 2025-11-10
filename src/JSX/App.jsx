@@ -25,6 +25,15 @@ function App() {
   const flItems = flTools;
   const hdItems = hdTools;
   const ldItems = ldTools;
+  // derive ai categories from data (include access/category values)
+  const aiCategories = Array.from(new Set(['all', ...aiItems.map(i => i.category).filter(Boolean)]));
+  const [selectedAICategory, setSelectedAICategory] = useState('all');
+  const filteredAIItems = selectedAICategory === 'all' ? aiItems : aiItems.filter(i => i.category === selectedAICategory);
+  
+  // Core Dev Tools category/filter by access (free/freemium/paid)
+  const cdtCategories = Array.from(new Set(['all', ...cdtItems.map(i => i.access).filter(Boolean)]));
+  const [selectedCDTCategory, setSelectedCDTCategory] = useState('all');
+  const filteredCDTItems = selectedCDTCategory === 'all' ? cdtItems : cdtItems.filter(i => i.access === selectedCDTCategory);
   const dvaCategories = ['all', 'fonts', 'photos', 'vectors', 'animations', 'inspiration'];
   const filteredDVAItems = selectedDVACategory === 'all' ? dvaItems : dvaItems.filter(i => i.category === selectedDVACategory);
 
@@ -91,12 +100,27 @@ function App() {
               <section id="ai" className="tab-section">
                 <h2>A.I. & Automation</h2>
 
-                <div className='column'>
+                {/* Category bar for AI (same placement as DVA) */}
+                <div className="category-bar">
+                  {aiCategories.map((cat) => (
+                    <button
+                      key={cat}
+                      type="button"
+                      className={selectedAICategory === cat ? 'category-button active' : 'category-button'}
+                      onClick={() => setSelectedAICategory(cat)}
+                      onMouseDown={(e) => e.preventDefault()}
+                    >
+                      {cat === 'all' ? 'All' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                    </button>
+                  ))}
+                </div>
 
+                <div className='column'>
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
-                      {aiItems.map((item) => (
+                      {filteredAIItems.map((item) => (
                         <li key={item.id}>
                           <button
                             type="button"
@@ -147,6 +171,7 @@ function App() {
 
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
                       {filteredDVAItems.map((item) => (
                         <li key={item.id}>
@@ -179,13 +204,28 @@ function App() {
             {activeSection === 'cdt' && (
               <section id="cdt" className="tab-section">
                 <h2>Core Development Tools</h2>
-                
+
+                {/* Category bar for CDT (access) */}
+                <div className="category-bar">
+                  {cdtCategories.map((cat) => (
+                    <button
+                      key={cat}
+                      type="button"
+                      className={selectedCDTCategory === cat ? 'category-button active' : 'category-button'}
+                      onClick={() => setSelectedCDTCategory(cat)}
+                    >
+                      {cat === 'all' ? 'All' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                    </button>
+                  ))}
+                </div>
+
                 <div className='column'>
 
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
-                      {cdtItems.map((item) => (
+                      {filteredCDTItems.map((item) => (
                         <li key={item.id}>
                           <button
                             type="button"
@@ -221,6 +261,7 @@ function App() {
 
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
                       {flItems.map((item) => (
                         <li key={item.id}>
@@ -258,6 +299,7 @@ function App() {
 
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
                       {hdItems.map((item) => (
                         <li key={item.id}>
@@ -295,6 +337,7 @@ function App() {
 
                   {/* Scrollable List */}
                   <div className='scrollmenu'>
+                    Scroll me ↓	
                     <ul>
                       {ldItems.map((item) => (
                         <li key={item.id}>
