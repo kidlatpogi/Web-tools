@@ -64,22 +64,22 @@ function App() {
           <nav>
             <ul>
               <li>
-                <button onClick={() => setActiveSection('ai')}>A.I. & Automation</button>
+                <button className={activeSection === 'ai' ? 'active' : ''} onClick={() => setActiveSection('ai')}>A.I. & Automation</button>
               </li>
               <li>
-                <button onClick={() => setActiveSection('va')}>Design & Visual Assets</button>
+                <button className={activeSection === 'va' ? 'active' : ''} onClick={() => setActiveSection('va')}>Design & Visual Assets</button>
               </li>
               <li>
-                <button onClick={() => setActiveSection('cdt')}>Core Development Tools</button>
+                <button className={activeSection === 'cdt' ? 'active' : ''} onClick={() => setActiveSection('cdt')}>Core Development Tools</button>
               </li>
               <li>
-                <button onClick={() => setActiveSection('fl')}>Frameworks & Libraries</button>
+                <button className={activeSection === 'fl' ? 'active' : ''} onClick={() => setActiveSection('fl')}>Frameworks & Libraries</button>
               </li>
               <li>
-                <button onClick={() => setActiveSection('hd')}>Hosting & Deploymen</button>
+                <button className={activeSection === 'hd' ? 'active' : ''} onClick={() => setActiveSection('hd')}>Hosting & Deploymen</button>
               </li>
               <li>
-                <button onClick={() => setActiveSection('ld')}>Learning & Documentation</button>
+                <button className={activeSection === 'ld' ? 'active' : ''} onClick={() => setActiveSection('ld')}>Learning & Documentation</button>
               </li>
             </ul>
           </nav>
