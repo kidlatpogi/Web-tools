@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ide",
+    "name": "IDEs & Code Editors",
+    "shortName": "IDEs",
+    "description": "Modern code editors, AI-powered environments, and developer workstations.",
+    "iconName": "Code",
+    "gradient": "from-orange-500 to-amber-600"
+  },
+  {
+    "id": "ai-agents",
+    "name": "AI Agents & Code Assistants",
+    "shortName": "AI Agents",
+    "description": "Autonomous coding agents, CLI tools, pair programmers, and full-stack generators.",
+    "iconName": "Bot",
+    "gradient": "from-amber-600 to-red-600"
+  },
+  {
+    "id": "ai-chatbots",
+    "name": "AI Chatbots & LLM Models",
+    "shortName": "AI Chatbots",
+    "description": "Frontier conversational models, reasoning engines, local LLMs, and search assistants.",
+    "iconName": "Sparkles",
+    "gradient": "from-red-600 to-orange-600"
+  },
+  {
+    "id": "design-inspiration",
+    "name": "Design Inspiration & UI Tools",
+    "shortName": "Design Inspo",
+    "description": "UI showcases, component ecosystems, interactive libraries, and UX flow galleries.",
+    "iconName": "Palette",
+    "gradient": "from-orange-600 to-amber-500"
+  },
+  {
+    "id": "certifications",
+    "name": "Free Certifications & Courses",
+    "shortName": "Certifications",
+    "description": "Verifiable credentials, interactive sandboxes, and foundational computer science courses.",
+    "iconName": "GraduationCap",
+    "gradient": "from-amber-500 to-orange-500"
+  },
+  {
+    "id": "typography-assets",
+    "name": "Fonts, Logos & Design Assets",
+    "shortName": "Assets & Fonts",
+    "description": "Open-source font directories, SVG brand logos, icon toolkits, and animations.",
+    "iconName": "Layers",
+    "gradient": "from-red-500 to-amber-600"
+  },
+  {
+    "id": "student-perks",
+    "name": "Student Perks & Free Tiers",
+    "shortName": "Student Perks",
+    "description": "Essential student packs, free cloud compute, serverless hosting, and software licenses.",
+    "iconName": "Gift",
+    "gradient": "from-orange-500 to-red-600"
+  }
+]
