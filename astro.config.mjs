@@ -6,6 +6,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://web-tools.kidlat.workers.dev',
   integrations: [react()],
 
   vite: {
