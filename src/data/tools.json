@@ -3444,5 +3444,32 @@
       "SVG to React / React Native / Vue / Svelte components",
       "100% browser-based with zero data sent to external servers"
     ]
+  },
+  {
+    "id": "mermaid-ai",
+    "name": "Mermaid AI & Chart Editor",
+    "url": "https://mermaid.ai/app/dashboard",
+    "description": "AI-powered text-to-diagram generator and live visual editor for building sequence diagrams, flowcharts, class diagrams, ER models, and Gantt charts using Markdown syntax.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Freemium",
+    "tags": [
+      "Mermaid",
+      "AI Diagrams",
+      "Flowcharts",
+      "Markdown",
+      "Sequence Diagrams",
+      "System Architecture"
+    ],
+    "featured": true,
+    "icon": "git-merge",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Generate complex flowcharts, ER models, and sequence diagrams from plain English prompts",
+      "Visual drag-and-drop diagramming canvas with live bi-directional Markdown sync",
+      "Seamless export to high-res SVG, PNG, and markdown snippets for GitHub READMEs",
+      "Pre-built templates for software engineering documentation and system design"
+    ],
+    "studentPerk": "Generous free tier with AI diagram generations and export capabilities"
   }
 ]
