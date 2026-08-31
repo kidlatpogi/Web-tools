@@ -22,7 +22,9 @@ import {
   ArrowUpDown,
   ShieldCheck,
   Scale,
-  Wrench
+  Wrench,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 
 interface ToolDirectoryProps {
@@ -41,11 +43,14 @@ const CATEGORY_ICON_MAP: Record<string, React.ReactNode> = {
   'online-tools': <Wrench className="w-3.5 h-3.5" />
 };
 
+const ITEMS_PER_PAGE = 12;
+
 export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, categories }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedPricing, setSelectedPricing] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'default' | 'az' | 'za'>('default');
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null);
   const [showPolicyModal, setShowPolicyModal] = useState(false);
   const [modalCopied, setModalCopied] = useState(false);
@@ -70,6 +75,11 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedTool, showPolicyModal, searchQuery]);
+
+  // Reset pagination to first page when search, category, pricing, or sorting changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedCategory, selectedPricing, sortBy]);
 
   // Category item count mapping
   const categoryCounts = useMemo(() => {
@@ -113,6 +123,36 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
     }
     return filtered;
   }, [initialTools, selectedCategory, selectedPricing, searchQuery, sortBy]);
+
+  // Pagination calculation
+  const totalPages = Math.max(1, Math.ceil(processedTools.length / ITEMS_PER_PAGE));
+  const paginatedTools = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return processedTools.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [processedTools, currentPage]);
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages || page === currentPage) return;
+    setCurrentPage(page);
+    const directoryEl = document.getElementById('directory');
+    if (directoryEl) {
+      directoryEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Dynamic pagination window helper
+  const pageNumbers = useMemo(() => {
+    if (totalPages <= 7) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, '...', totalPages];
+    }
+    if (currentPage >= totalPages - 3) {
+      return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+    return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+  }, [currentPage, totalPages]);
 
   const pricingOptions = [
     'all',
@@ -171,21 +211,23 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
           </div>
         </div>
 
-        {/* Category Filter Wrapping Pills */}
-        <div className="w-full max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 px-1">
+        {/* Category Filter Wrapping Pills: 2 columns on mobile (4 rows + bottom row for online-tools), flex-wrap on desktop */}
+        <div className="w-full max-w-5xl mx-auto grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-2.5 px-2 sm:px-1">
           <button
             type="button"
             onClick={() => setSelectedCategory('all')}
-            className={`cursor-target inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
+            className={`col-span-1 cursor-target inline-flex items-center justify-between sm:justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2 rounded-full font-mono text-[10.5px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
               selectedCategory === 'all'
                 ? 'bg-accent text-white border-accent shadow-md shadow-accent/20'
                 : 'bg-white/90 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
             }`}
           >
-            <LayoutGrid className="w-3.5 h-3.5" />
-            All Tools
+            <div className="inline-flex items-center gap-1.5 truncate">
+              <LayoutGrid className="w-3.5 h-3.5 shrink-0" />
+              <span className="truncate">All Tools</span>
+            </div>
             <span
-              className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+              className={`px-1.5 py-0.2 rounded-full text-[10px] shrink-0 font-bold ${
                 selectedCategory === 'all'
                   ? 'bg-black/30 text-white'
                   : 'bg-slate-100 text-slate-600'
@@ -197,21 +239,28 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
 
           {categories.map((cat) => {
             const isSelected = selectedCategory === cat.id;
+            const isOnlineTools = cat.id === 'online-tools';
             return (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`cursor-target inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
+                className={`${
+                  isOnlineTools ? 'col-span-2' : 'col-span-1'
+                } cursor-target inline-flex items-center ${
+                  isOnlineTools ? 'justify-center' : 'justify-between sm:justify-center'
+                } gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2 rounded-full font-mono text-[10.5px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
                   isSelected
                     ? 'bg-accent text-white border-accent shadow-md shadow-accent/20'
                     : 'bg-white/90 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
                 }`}
               >
-                {CATEGORY_ICON_MAP[cat.id] || <Tag className="w-3.5 h-3.5" />}
-                {cat.shortName}
+                <div className="inline-flex items-center gap-1.5 truncate">
+                  <span className="shrink-0">{CATEGORY_ICON_MAP[cat.id] || <Tag className="w-3.5 h-3.5" />}</span>
+                  <span className="truncate">{cat.shortName}</span>
+                </div>
                 <span
-                  className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+                  className={`px-1.5 py-0.2 rounded-full text-[10px] shrink-0 font-bold ${
                     isSelected ? 'bg-black/30 text-white' : 'bg-slate-100 text-slate-600'
                   }`}
                 >
@@ -284,8 +333,16 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
             </div>
 
             <div className="font-mono text-xs text-slate-500 font-bold tracking-wider shrink-0">
-              Showing <span className="text-accent">{processedTools.length}</span> of{' '}
-              {initialTools.length}
+              Showing{' '}
+              <span className="text-accent">
+                {processedTools.length === 0
+                  ? 0
+                  : `${(currentPage - 1) * ITEMS_PER_PAGE + 1} - ${Math.min(
+                      currentPage * ITEMS_PER_PAGE,
+                      processedTools.length
+                    )}`}
+              </span>{' '}
+              of {processedTools.length}
             </div>
           </div>
 
@@ -293,13 +350,91 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
 
       </div>
 
-      {/* Tools Bento Grid */}
-      {processedTools.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {processedTools.map((tool) => (
-            <ToolCard key={tool.id} tool={tool} onSelect={(t) => setSelectedTool(t)} />
-          ))}
-        </div>
+      {/* Tools Bento Grid with Pagination */}
+      {paginatedTools.length > 0 ? (
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {paginatedTools.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} onSelect={(t) => setSelectedTool(t)} />
+            ))}
+          </div>
+
+          {/* Responsive Pagination Controls Bar */}
+          {totalPages > 1 && (
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-slate-200/80">
+              <div className="font-mono text-xs text-slate-500 font-medium text-center sm:text-left">
+                Page <span className="text-slate-900 font-bold">{currentPage}</span> of{' '}
+                <span className="text-slate-900 font-bold">{totalPages}</span>
+                <span className="hidden sm:inline text-slate-400"> &bull; {processedTools.length} total tools</span>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+                {/* Prev Button */}
+                <button
+                  type="button"
+                  disabled={currentPage === 1}
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  className={`cursor-target inline-flex items-center gap-1 px-3 py-1.5 rounded-xl font-mono text-xs font-bold uppercase transition-all duration-200 border ${
+                    currentPage === 1
+                      ? 'opacity-40 cursor-not-allowed bg-slate-50 text-slate-400 border-slate-200'
+                      : 'bg-white hover:bg-slate-900 hover:text-white text-slate-700 border-slate-200 shadow-xs'
+                  }`}
+                  aria-label="Previous Page"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  <span className="hidden sm:inline">Prev</span>
+                </button>
+
+                {/* Page Number Pills */}
+                <div className="flex items-center gap-1">
+                  {pageNumbers.map((page, idx) => {
+                    if (page === '...') {
+                      return (
+                        <span key={`ellipsis-${idx}`} className="px-1.5 py-1 text-slate-400 font-mono text-xs font-bold">
+                          ...
+                        </span>
+                      );
+                    }
+                    const pageNum = page as number;
+                    const isActive = pageNum === currentPage;
+                    return (
+                      <button
+                        key={pageNum}
+                        type="button"
+                        onClick={() => handlePageChange(pageNum)}
+                        className={`cursor-target w-8 h-8 sm:w-9 sm:h-9 rounded-xl font-mono text-xs font-bold flex items-center justify-center transition-all duration-200 border ${
+                          isActive
+                            ? 'bg-accent text-white border-accent shadow-md shadow-accent/20'
+                            : 'bg-white hover:bg-slate-100 text-slate-700 border-slate-200'
+                        }`}
+                        aria-label={`Go to page ${pageNum}`}
+                        aria-current={isActive ? 'page' : undefined}
+                      >
+                        {pageNum}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Next Button */}
+                <button
+                  type="button"
+                  disabled={currentPage === totalPages}
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  className={`cursor-target inline-flex items-center gap-1 px-3 py-1.5 rounded-xl font-mono text-xs font-bold uppercase transition-all duration-200 border ${
+                    currentPage === totalPages
+                      ? 'opacity-40 cursor-not-allowed bg-slate-50 text-slate-400 border-slate-200'
+                      : 'bg-white hover:bg-slate-900 hover:text-white text-slate-700 border-slate-200 shadow-xs'
+                  }`}
+                  aria-label="Next Page"
+                >
+                  <span className="hidden sm:inline">Next</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          )}
+        </>
       ) : (
         /* Empty State */
         <div className="w-full py-16 px-6 text-center border-2 border-dashed border-slate-200 bg-white/50 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center">
