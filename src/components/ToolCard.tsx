@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { ToolItem } from '../types/tool';
-import { ArrowUpRight, Copy, Check, Star, Gift, Sparkles, Code2, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, Copy, Check, Gift } from 'lucide-react';
 
 interface ToolCardProps {
   tool: ToolItem;
@@ -36,29 +36,21 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool, onSelect }) => {
   return (
     <div
       onClick={() => onSelect && onSelect(tool)}
-      className="group relative border-2 border-slate-200/80 bg-white/95 backdrop-blur-md p-6 rounded-3xl flex flex-col justify-between hover:border-accent hover:shadow-[0_16px_36px_-12px_rgba(196,73,0,0.16)] hover:-translate-y-1 transition-all duration-300 cursor-target text-left"
+      className="group relative border-2 border-slate-200/80 bg-white/95 backdrop-blur-md p-5 sm:p-6 rounded-2xl sm:rounded-3xl flex flex-col justify-between hover:border-accent hover:shadow-[0_16px_36px_-12px_rgba(196,73,0,0.16)] hover:-translate-y-1 transition-all duration-300 cursor-target text-left"
     >
-      {/* Top Header: Category & Badges */}
+      {/* Top Header: Category & Pricing Badge */}
       <div>
         <div className="flex items-center justify-between gap-2 mb-3">
           <span className="font-mono text-[11px] uppercase tracking-wider text-slate-400 font-bold truncate">
             {tool.categoryName}
           </span>
-          <div className="flex items-center gap-1.5 shrink-0">
-            {tool.featured && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-accent/10 border border-accent/20 text-accent font-mono text-[10px] font-bold uppercase tracking-wider">
-                <Star className="w-3 h-3 fill-accent text-accent" />
-                Featured
-              </span>
-            )}
-            <span
-              className={`font-mono text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full border font-semibold ${getPricingBadgeClass(
-                tool.pricing
-              )}`}
-            >
-              {tool.pricing}
-            </span>
-          </div>
+          <span
+            className={`shrink-0 font-mono text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full border font-semibold ${getPricingBadgeClass(
+              tool.pricing
+            )}`}
+          >
+            {tool.pricing}
+          </span>
         </div>
 
         {/* Title */}

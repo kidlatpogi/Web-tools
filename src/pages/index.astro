@@ -8,6 +8,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const allTools = getAllTools();
 const categories = getCategories();
+const currentYear = new Date().getFullYear();
 ---
 
 <Layout
@@ -32,77 +33,77 @@ const categories = getCategories();
   <TargetCursor client:load targetSelector="a, button, .cursor-target" />
 
   <!-- Main Container -->
-  <main class="w-full min-h-screen flex flex-col items-center justify-start relative z-10">
+  <main class="w-full min-h-screen flex flex-col items-center justify-start relative z-10 overflow-x-hidden">
     
     <!-- Top Hero Section -->
-    <section class="w-full max-w-[1440px] px-4 sm:px-6 md:px-12 pt-20 pb-8 flex flex-col items-center text-center">
+    <section class="w-full max-w-[1440px] px-4 sm:px-6 md:px-12 pt-16 sm:pt-20 pb-6 sm:pb-8 flex flex-col items-center text-center">
       
       <!-- Main Headline Typography -->
       <div class="flex flex-col items-center justify-center my-3 select-none">
-        <span class="font-array-semibold text-xs sm:text-base md:text-lg font-semibold uppercase tracking-[0.25em] text-[#334155] mb-2">
+        <span class="font-array-semibold text-[11px] sm:text-sm md:text-base font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-[#334155] mb-2 sm:mb-3">
           Curated Developer Arsenal &bull; IT / CS Student Toolkit
         </span>
         
-        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-0 leading-none">
-          <h1 class="font-sans text-[11vw] sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-black tracking-tighter uppercase leading-[0.88] drop-shadow-xs">
+        <div class="flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-4 gap-y-0 leading-none">
+          <h1 class="font-sans text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-black tracking-tighter uppercase leading-[0.88] drop-shadow-xs">
             Web
           </h1>
-          <h1 class="font-clash-semibold text-[11vw] sm:text-7xl md:text-8xl lg:text-[7.5rem] font-semibold text-accent tracking-tighter uppercase leading-[0.88]">
+          <h1 class="font-clash-semibold text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-semibold text-accent tracking-tighter uppercase leading-[0.88]">
             Tools
           </h1>
         </div>
       </div>
 
-      <!-- Descriptive Narrative -->
-      <p class="font-sans text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed my-6">
-        An exhaustive, research-backed repository compiling essential software utilities for developers:
-        <strong class="text-slate-900 font-semibold">IDEs</strong>,
-        <strong class="text-slate-900 font-semibold">AI Agents</strong>,
-        <strong class="text-slate-900 font-semibold">AI Chatbots</strong>,
-        <strong class="text-slate-900 font-semibold">Design Inspiration</strong>,
-        <strong class="text-slate-900 font-semibold">Free Certifications</strong>,
-        <strong class="text-slate-900 font-semibold">Typography & Logos</strong>, and
+      <!-- Descriptive Narrative (Fixed Grammar & Spacing) -->
+      <p class="font-sans text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl leading-relaxed my-5 sm:my-6 px-2">
+        An exhaustive, research-backed repository compiling essential developer utilities ? from{' '}
+        <strong class="text-slate-900 font-semibold">IDEs</strong>,{' '}
+        <strong class="text-slate-900 font-semibold">AI Agents</strong>, and{' '}
+        <strong class="text-slate-900 font-semibold">AI Chatbots</strong> to{' '}
+        <strong class="text-slate-900 font-semibold">Design Inspiration</strong>,{' '}
+        <strong class="text-slate-900 font-semibold">Free Certifications</strong>,{' '}
+        <strong class="text-slate-900 font-semibold">Typography &amp; Logos</strong>, and{' '}
         <strong class="text-slate-900 font-semibold">CS Student Perks</strong>.
       </p>
 
-      <!-- Quick Action Buttons -->
-      <div class="flex items-center justify-center mt-2 mb-10">
+      <!-- Quick Action Button -->
+      <div class="flex items-center justify-center mt-1 mb-8 sm:mb-10">
         <a
           href="#directory"
-          class="cursor-target inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
+          class="cursor-target inline-flex items-center gap-2 px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
         >
           Explore {allTools.length} Tools
           <ArrowUpRight className="w-4 h-4" />
         </a>
       </div>
 
-      <!-- Stats Matrix Grid (Clean 3-metric layout) -->
-      <div class="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
-        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
+      <!-- Stats Matrix Grid (Responsive 3-metric layout) -->
+      <div class="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-left px-2">
+        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Total Curated
           </span>
-          <div class="font-clash-semibold text-3xl font-bold text-slate-900">
+          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-slate-900">
             {allTools.length}+
           </div>
           <span class="font-sans text-xs text-slate-500">Verified Developer Tools</span>
         </div>
 
-        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
+        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Categories
           </span>
-          <div class="font-clash-semibold text-3xl font-bold text-accent">
+          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-accent">
             {categories.length}
           </div>
           <span class="font-sans text-xs text-slate-500">Domain Classifications</span>
         </div>
 
-        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
+        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Pricing Models
           </span>
-          <div class="font-clash-semibold text-3xl font-bold text-slate-900">
+          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-slate-900">
             100%
           </div>
           <span class="font-sans text-xs text-slate-500">Free / Freemium / Student</span>
@@ -114,14 +115,25 @@ const categories = getCategories();
     <!-- Interactive Directory React Island Component -->
     <ToolDirectory client:load initialTools={allTools} categories={categories} />
 
-    <!-- Footer Section -->
-    <footer class="w-full border-t border-slate-200/80 bg-white/70 backdrop-blur-md py-8 px-4 sm:px-6 md:px-12 text-center mt-16">
-      <div class="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
-        <div>
-          <strong class="text-slate-900 font-bold">Web-Tools</strong> &bull; Curated Developer & Student Directory
+    <!-- Footer Section with Automated Year & Copyright Attribution -->
+    <footer class="w-full border-t border-slate-200/80 bg-white/80 backdrop-blur-md py-8 px-4 sm:px-6 md:px-12 text-center mt-12 sm:mt-16">
+      <div class="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs font-mono text-slate-600">
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+          <span>&copy; {currentYear} <strong class="text-slate-900">Web-Tools</strong>.</span>
+          <span>Made by</span>
+          <a
+            href="https://github.com/kidlatpogi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent font-bold hover:underline cursor-target"
+          >
+            kidlatpogi
+          </a>
         </div>
         <div class="flex items-center gap-4">
-          <a href="#directory" class="hover:text-accent transition-colors">Back to Top &uarr;</a>
+          <a href="#directory" class="hover:text-accent font-medium transition-colors cursor-target">
+            Back to Top &uarr;
+          </a>
         </div>
       </div>
     </footer>
