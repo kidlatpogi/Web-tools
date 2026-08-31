@@ -18,7 +18,9 @@ import {
   Tag,
   Check,
   Copy,
-  Info
+  Info,
+  ArrowUpDown,
+  SlidersHorizontal
 } from 'lucide-react';
 
 interface ToolDirectoryProps {
@@ -27,19 +29,20 @@ interface ToolDirectoryProps {
 }
 
 const CATEGORY_ICON_MAP: Record<string, React.ReactNode> = {
-  ide: <Code className="w-4 h-4" />,
-  'ai-agents': <Bot className="w-4 h-4" />,
-  'ai-chatbots': <Sparkles className="w-4 h-4" />,
-  'design-inspiration': <Palette className="w-4 h-4" />,
-  certifications: <GraduationCap className="w-4 h-4" />,
-  'typography-assets': <Layers className="w-4 h-4" />,
-  'student-perks': <Gift className="w-4 h-4" />
+  ide: <Code className="w-3.5 h-3.5" />,
+  'ai-agents': <Bot className="w-3.5 h-3.5" />,
+  'ai-chatbots': <Sparkles className="w-3.5 h-3.5" />,
+  'design-inspiration': <Palette className="w-3.5 h-3.5" />,
+  certifications: <GraduationCap className="w-3.5 h-3.5" />,
+  'typography-assets': <Layers className="w-3.5 h-3.5" />,
+  'student-perks': <Gift className="w-3.5 h-3.5" />
 };
 
 export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, categories }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedPricing, setSelectedPricing] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<'featured' | 'az' | 'za'>('featured');
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null);
   const [modalCopied, setModalCopied] = useState(false);
 
@@ -52,9 +55,9 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
     return counts;
   }, [initialTools, categories]);
 
-  // Filtered tools
-  const filteredTools = useMemo(() => {
-    return initialTools.filter((tool) => {
+  // Filtered & Sorted tools
+  const processedTools = useMemo(() => {
+    const filtered = initialTools.filter((tool) => {
       // Category filter
       if (selectedCategory !== 'all' && tool.category !== selectedCategory) {
         return false;
@@ -75,7 +78,23 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
       }
       return true;
     });
-  }, [initialTools, selectedCategory, selectedPricing, searchQuery]);
+
+    // Sorting
+    return [...filtered].sort((a, b) => {
+      if (sortBy === 'featured') {
+        if (a.featured && !b.featured) return -1;
+        if (!a.featured && b.featured) return 1;
+        return a.name.localeCompare(b.name);
+      }
+      if (sortBy === 'az') {
+        return a.name.localeCompare(b.name);
+      }
+      if (sortBy === 'za') {
+        return b.name.localeCompare(a.name);
+      }
+      return 0;
+    });
+  }, [initialTools, selectedCategory, selectedPricing, searchQuery, sortBy]);
 
   const pricingOptions = [
     'all',
@@ -93,7 +112,7 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
   };
 
   return (
-    <section id="directory" className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 py-12">
+    <section id="directory" className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 py-10">
       {/* Directory Top Header Controls */}
       <div className="flex flex-col gap-6 mb-10">
         
@@ -120,21 +139,21 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
           </div>
         </div>
 
-        {/* Category Filter Horizontal Scroll Tabs */}
-        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-2 scrollbar-none no-scrollbar">
+        {/* Category Filter Wrapping Pills - Wrapped cleanly so never cut off */}
+        <div className="w-full max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 px-2">
           <button
             type="button"
             onClick={() => setSelectedCategory('all')}
-            className={`cursor-target shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
+            className={`cursor-target inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
               selectedCategory === 'all'
                 ? 'bg-accent text-white border-accent shadow-md shadow-accent/20'
-                : 'bg-white/80 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
+                : 'bg-white/90 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
             }`}
           >
             <LayoutGrid className="w-3.5 h-3.5" />
             All Tools
             <span
-              className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+              className={`px-1.5 py-0.5 rounded-full text-[10px] ${
                 selectedCategory === 'all'
                   ? 'bg-black/30 text-white'
                   : 'bg-slate-100 text-slate-600'
@@ -151,16 +170,16 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
                 key={cat.id}
                 type="button"
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`cursor-target shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
+                className={`cursor-target inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border-2 ${
                   isSelected
                     ? 'bg-accent text-white border-accent shadow-md shadow-accent/20'
-                    : 'bg-white/80 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
+                    : 'bg-white/90 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-white'
                 }`}
               >
                 {CATEGORY_ICON_MAP[cat.id] || <Tag className="w-3.5 h-3.5" />}
                 {cat.shortName}
                 <span
-                  className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+                  className={`px-1.5 py-0.5 rounded-full text-[10px] ${
                     isSelected ? 'bg-black/30 text-white' : 'bg-slate-100 text-slate-600'
                   }`}
                 >
@@ -171,11 +190,13 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
           })}
         </div>
 
-        {/* Pricing Filter Bar & Result Summary */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-200/60">
-          <div className="flex flex-wrap items-center gap-1.5">
-            <span className="font-mono text-xs text-slate-400 font-bold uppercase tracking-wider mr-1.5 flex items-center gap-1">
-              <Filter className="w-3 h-3 text-accent" />
+        {/* Pricing Filter & Sorting Controls Bar */}
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-200/80">
+          
+          {/* Pricing Pills */}
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 w-full md:w-auto">
+            <span className="font-mono text-xs text-slate-400 font-bold uppercase tracking-wider mr-1 flex items-center gap-1">
+              <Filter className="w-3.5 h-3.5 text-accent" />
               Pricing:
             </span>
             {pricingOptions.map((price) => (
@@ -186,7 +207,7 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
                 className={`cursor-target px-3 py-1 rounded-full font-mono text-[11px] font-semibold tracking-wider uppercase transition-all duration-200 border ${
                   selectedPricing === price
                     ? 'bg-slate-900 text-white border-slate-900'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300'
+                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                 }`}
               >
                 {price === 'all' ? 'All Tiers' : price}
@@ -194,18 +215,56 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
             ))}
           </div>
 
-          <div className="font-mono text-xs text-slate-500 font-bold tracking-wider">
-            Showing <span className="text-accent">{filteredTools.length}</span> of{' '}
-            {initialTools.length} curated utilities
+          {/* Sort Controls & Count */}
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 w-full md:w-auto">
+            <div className="flex items-center gap-1.5 bg-white/90 border border-slate-200 px-2.5 py-1 rounded-full">
+              <span className="font-mono text-[11px] text-slate-400 uppercase font-bold flex items-center gap-1">
+                <ArrowUpDown className="w-3 h-3 text-accent" />
+                Sort:
+              </span>
+              <button
+                type="button"
+                onClick={() => setSortBy('featured')}
+                className={`cursor-target px-2.5 py-0.5 rounded-full font-mono text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                  sortBy === 'featured' ? 'bg-accent text-white' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Featured
+              </button>
+              <button
+                type="button"
+                onClick={() => setSortBy('az')}
+                className={`cursor-target px-2.5 py-0.5 rounded-full font-mono text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                  sortBy === 'az' ? 'bg-accent text-white' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                A-Z
+              </button>
+              <button
+                type="button"
+                onClick={() => setSortBy('za')}
+                className={`cursor-target px-2.5 py-0.5 rounded-full font-mono text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                  sortBy === 'za' ? 'bg-accent text-white' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Z-A
+              </button>
+            </div>
+
+            <div className="font-mono text-xs text-slate-500 font-bold tracking-wider shrink-0">
+              Showing <span className="text-accent">{processedTools.length}</span> of{' '}
+              {initialTools.length}
+            </div>
           </div>
+
         </div>
 
       </div>
 
       {/* Tools Bento Grid */}
-      {filteredTools.length > 0 ? (
+      {processedTools.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredTools.map((tool) => (
+          {processedTools.map((tool) => (
             <ToolCard key={tool.id} tool={tool} onSelect={(t) => setSelectedTool(t)} />
           ))}
         </div>
@@ -227,6 +286,7 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
               setSearchQuery('');
               setSelectedCategory('all');
               setSelectedPricing('all');
+              setSortBy('featured');
             }}
             className="cursor-target px-5 py-2 rounded-full bg-black hover:bg-accent text-white font-mono text-xs font-bold uppercase tracking-wider transition-colors"
           >

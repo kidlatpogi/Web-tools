@@ -4,24 +4,10 @@ import ShapeGrid from '../components/ShapeGrid.tsx';
 import TargetCursor from '../components/TargetCursor.tsx';
 import { ToolDirectory } from '../components/ToolDirectory.tsx';
 import { getAllTools, getCategories } from '../data/tools.ts';
-import {
-  ArrowUpRight,
-  Terminal,
-  Code,
-  Bot,
-  Sparkles,
-  Palette,
-  GraduationCap,
-  Layers,
-  Gift,
-  ShieldCheck,
-  Zap,
-  Globe
-} from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const allTools = getAllTools();
 const categories = getCategories();
-const featuredCount = allTools.filter((t) => t.featured).length;
 ---
 
 <Layout
@@ -49,16 +35,8 @@ const featuredCount = allTools.filter((t) => t.featured).length;
   <main class="w-full min-h-screen flex flex-col items-center justify-start relative z-10">
     
     <!-- Top Hero Section -->
-    <section class="w-full max-w-[1440px] px-4 sm:px-6 md:px-12 pt-16 pb-12 flex flex-col items-center text-center">
+    <section class="w-full max-w-[1440px] px-4 sm:px-6 md:px-12 pt-20 pb-8 flex flex-col items-center text-center">
       
-      <!-- Top Badge / Subtitle -->
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-200 bg-white/90 backdrop-blur-md shadow-xs mb-6 cursor-target">
-        <span class="w-2.5 h-2.5 rounded-full bg-accent animate-pulse"></span>
-        <span class="font-mono text-xs sm:text-sm uppercase tracking-widest text-[#334155] font-bold">
-          Web-Tools v1.1.0 Directory Active
-        </span>
-      </div>
-
       <!-- Main Headline Typography -->
       <div class="flex flex-col items-center justify-center my-3 select-none">
         <span class="font-array-semibold text-xs sm:text-base md:text-lg font-semibold uppercase tracking-[0.25em] text-[#334155] mb-2">
@@ -88,28 +66,19 @@ const featuredCount = allTools.filter((t) => t.featured).length;
       </p>
 
       <!-- Quick Action Buttons -->
-      <div class="flex flex-wrap items-center justify-center gap-4 mt-2 mb-10">
+      <div class="flex items-center justify-center mt-2 mb-10">
         <a
           href="#directory"
-          class="cursor-target inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
+          class="cursor-target inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
         >
           Explore {allTools.length} Tools
           <ArrowUpRight className="w-4 h-4" />
         </a>
-
-        <a
-          href="/designs.md"
-          target="_blank"
-          class="cursor-target inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white border-2 border-slate-200 text-slate-800 font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:border-accent hover:text-accent transition-all duration-300 shadow-xs"
-        >
-          Design System Specs
-          <ArrowUpRight className="w-4 h-4" />
-        </a>
       </div>
 
-      <!-- Stats Matrix Grid -->
-      <div class="w-full max-w-4xl grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
-        <div class="p-4 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all">
+      <!-- Stats Matrix Grid (Clean 3-metric layout) -->
+      <div class="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Total Curated
           </span>
@@ -119,7 +88,7 @@ const featuredCount = allTools.filter((t) => t.featured).length;
           <span class="font-sans text-xs text-slate-500">Verified Developer Tools</span>
         </div>
 
-        <div class="p-4 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all">
+        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Categories
           </span>
@@ -129,7 +98,7 @@ const featuredCount = allTools.filter((t) => t.featured).length;
           <span class="font-sans text-xs text-slate-500">Domain Classifications</span>
         </div>
 
-        <div class="p-4 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all">
+        <div class="p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
           <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
             Pricing Models
           </span>
@@ -138,16 +107,6 @@ const featuredCount = allTools.filter((t) => t.featured).length;
           </div>
           <span class="font-sans text-xs text-slate-500">Free / Freemium / Student</span>
         </div>
-
-        <div class="p-4 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all">
-          <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
-            Terminal CLI
-          </span>
-          <div class="font-clash-semibold text-3xl font-bold text-slate-900">
-            Admin
-          </div>
-          <span class="font-sans text-xs text-slate-500">Interactive CLI Panel</span>
-        </div>
       </div>
 
     </section>
@@ -155,69 +114,14 @@ const featuredCount = allTools.filter((t) => t.featured).length;
     <!-- Interactive Directory React Island Component -->
     <ToolDirectory client:load initialTools={allTools} categories={categories} />
 
-    <!-- Terminal Admin Panel Showcase Section -->
-    <section class="w-full max-w-[1200px] px-4 sm:px-6 md:px-12 py-16">
-      <div class="w-full rounded-3xl bg-black text-white p-8 sm:p-12 relative overflow-hidden border border-slate-800 shadow-2xl cursor-target">
-        <div class="absolute -right-20 -top-20 w-80 h-80 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 flex flex-col gap-4 text-left">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 w-fit">
-              <Terminal className="w-3.5 h-3.5 text-accent" />
-              <span class="font-mono text-xs text-slate-300 uppercase tracking-widest font-semibold">
-                Built-in CLI Admin Tool
-              </span>
-            </div>
-
-            <h2 class="font-clash-semibold text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
-              Manage & Add Tools Directly in Your Terminal
-            </h2>
-
-            <p class="font-sans text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
-              Web-Tools includes an interactive CLI Admin Panel. Effortlessly add new tools with real-time prompt validation, search database entries, update existing records, and run schema integrity tests.
-            </p>
-
-            <div class="flex flex-wrap items-center gap-3 pt-2">
-              <div class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 font-mono text-xs sm:text-sm text-accent font-bold">
-                <span class="text-slate-400">$</span> npm run admin
-              </div>
-              <span class="font-sans text-xs text-slate-400">
-                Interactive prompts &bull; Zero external dependencies
-              </span>
-            </div>
-          </div>
-
-          <div class="lg:col-span-5 bg-slate-950/90 border border-slate-800 rounded-2xl p-5 font-mono text-xs text-slate-300 shadow-inner">
-            <div class="flex items-center gap-1.5 pb-3 mb-3 border-b border-slate-800">
-              <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-              <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
-              <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
-              <span class="text-[11px] text-slate-500 ml-2">web-tools-admin-cli</span>
-            </div>
-            <p class="text-accent font-bold mb-1">? Select an operation:</p>
-            <p class="text-slate-400 pl-2">&gt; [1] ➕ Add New Tool</p>
-            <p class="text-slate-400 pl-2">&gt; [2] 📋 List Tools by Category</p>
-            <p class="text-slate-400 pl-2">&gt; [3] 🔍 Search Tools</p>
-            <p class="text-slate-400 pl-2">&gt; [4] ✏️ Edit Existing Tool</p>
-            <p class="text-slate-400 pl-2">&gt; [5] 🗑️ Delete Tool</p>
-            <p class="text-slate-400 pl-2">&gt; [6] 📊 Category Statistics</p>
-            <p class="text-slate-400 pl-2">&gt; [7] 🧪 Validate Database Integrity</p>
-            <p class="text-emerald-400 mt-2">✓ All {allTools.length} curated entries validated</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer Section -->
-    <footer class="w-full border-t border-slate-200/80 bg-white/70 backdrop-blur-md py-10 px-4 sm:px-6 md:px-12 text-center mt-12">
+    <footer class="w-full border-t border-slate-200/80 bg-white/70 backdrop-blur-md py-8 px-4 sm:px-6 md:px-12 text-center mt-16">
       <div class="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
         <div>
           <strong class="text-slate-900 font-bold">Web-Tools</strong> &bull; Curated Developer & Student Directory
         </div>
         <div class="flex items-center gap-4">
-          <a href="/designs.md" class="hover:text-accent transition-colors">Design Specs</a>
-          <span>&bull;</span>
-          <a href="#directory" class="hover:text-accent transition-colors">Back to Top</a>
+          <a href="#directory" class="hover:text-accent transition-colors">Back to Top &uarr;</a>
         </div>
       </div>
     </footer>
