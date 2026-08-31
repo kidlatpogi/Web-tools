@@ -1,4 +1,20 @@
-# Web-Tools: Crawler Directives
-# Disallow all automated crawlers and scrapers
+# Web-Tools Robots Directives
 User-agent: *
+Allow: /
+
+# Block AI scrapers & bulk content scrapers
+User-agent: GPTBot
 Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: AnthropicAI
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+

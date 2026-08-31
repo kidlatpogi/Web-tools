@@ -54,5 +54,13 @@
     "description": "Essential student packs, free cloud compute, serverless hosting, and software licenses.",
     "iconName": "Gift",
     "gradient": "from-orange-500 to-red-600"
+  },
+  {
+    "id": "online-tools",
+    "name": "Online Tools & Utilities",
+    "shortName": "Online Tools",
+    "description": "Essential web utilities, PDF tools, regex testers, code converters, diagramming whiteboards, and student productivity suites.",
+    "iconName": "Wrench",
+    "gradient": "from-amber-600 to-orange-600"
   }
 ]

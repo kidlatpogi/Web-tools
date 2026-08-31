@@ -12,7 +12,8 @@ export type CategoryId =
   | 'design-inspiration'
   | 'certifications'
   | 'typography-assets'
-  | 'student-perks';
+  | 'student-perks'
+  | 'online-tools';
 
 export interface CategoryInfo {
   id: CategoryId;

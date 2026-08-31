@@ -44,14 +44,14 @@ const currentYear = new Date().getFullYear();
           Curated Developer Arsenal &bull; IT / CS Student Toolkit
         </span>
         
-        <div class="flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-4 gap-y-0 leading-none">
-          <h1 class="font-sans text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-black tracking-tighter uppercase leading-[0.88] drop-shadow-xs">
+        <h1 class="flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-4 gap-y-0 leading-none">
+          <span class="font-sans text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-black tracking-tighter uppercase leading-[0.88] drop-shadow-xs">
             Web
-          </h1>
-          <h1 class="font-clash-semibold text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-semibold text-accent tracking-tighter uppercase leading-[0.88]">
+          </span>
+          <span class="font-clash-semibold text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-semibold text-accent tracking-tighter uppercase leading-[0.88]">
             Tools
-          </h1>
-        </div>
+          </span>
+        </h1>
       </div>
 
       <!-- Descriptive Narrative -->
@@ -66,13 +66,23 @@ const currentYear = new Date().getFullYear();
         <strong class="text-slate-900 font-semibold">CS Student Perks</strong>.
       </p>
 
-      <!-- Quick Action Button -->
-      <div class="flex items-center justify-center mt-1 mb-2 sm:mb-4">
+      <!-- Quick Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-1 mb-2 sm:mb-4">
         <a
           href="#directory"
           class="cursor-target inline-flex items-center gap-2 px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
         >
           Explore {allTools.length} Tools
+          <ArrowUpRight className="w-4 h-4" />
+        </a>
+
+        <a
+          href="https://portfolio.kidlat.workers.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cursor-target inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/90 backdrop-blur-md border-2 border-slate-200 hover:border-accent hover:text-accent text-slate-800 font-mono text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-xs hover:shadow-md hover:-translate-y-0.5"
+        >
+          Visit my Portfolio
           <ArrowUpRight className="w-4 h-4" />
         </a>
       </div>

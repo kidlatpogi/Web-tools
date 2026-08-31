@@ -21,7 +21,8 @@ import {
   Info,
   ArrowUpDown,
   ShieldCheck,
-  Scale
+  Scale,
+  Wrench
 } from 'lucide-react';
 
 interface ToolDirectoryProps {
@@ -36,7 +37,8 @@ const CATEGORY_ICON_MAP: Record<string, React.ReactNode> = {
   'design-inspiration': <Palette className="w-3.5 h-3.5" />,
   certifications: <GraduationCap className="w-3.5 h-3.5" />,
   'typography-assets': <Layers className="w-3.5 h-3.5" />,
-  'student-perks': <Gift className="w-3.5 h-3.5" />
+  'student-perks': <Gift className="w-3.5 h-3.5" />,
+  'online-tools': <Wrench className="w-3.5 h-3.5" />
 };
 
 export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, categories }) => {
@@ -129,6 +131,9 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
 
   return (
     <section id="directory" className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 py-6 sm:py-10">
+      {/* Semantic Directory Heading for Screen Readers and SEO hierarchy */}
+      <h2 className="sr-only">Curated Developer Tools &amp; CS Student Utilities</h2>
+
       {/* Directory Top Header Controls */}
       <div className="flex flex-col gap-5 sm:gap-6 mb-8 sm:mb-10">
         
@@ -138,6 +143,9 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
             <Search className="absolute left-4 w-4 sm:w-5 h-4 sm:h-5 text-slate-400 pointer-events-none" />
             <input
               ref={searchInputRef}
+              id="search-tools"
+              name="search"
+              aria-label="Search tools, topics, tags, and categories"
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -446,9 +454,9 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
       {/* Complete Responsive Footer with Copyright and Legal Disclaimer Below It */}
       <footer className="w-full border-t border-slate-200/80 bg-white/80 backdrop-blur-md py-8 px-4 sm:px-6 md:px-12 mt-16 sm:mt-20">
         <div className="max-w-[1400px] mx-auto flex flex-col gap-4 text-center sm:text-left">
-          {/* Top Row: Copyright, Author & Back to Top */}
+          {/* Top Row: Copyright, Author, Portfolio Link & Back to Top */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs font-mono text-slate-600">
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
               <span>&copy; {new Date().getFullYear()} <strong className="text-slate-900">Web-Tools</strong>.</span>
               <span>Made by</span>
               <a
@@ -458,6 +466,16 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
                 className="text-accent font-bold hover:underline cursor-target"
               >
                 kidlatpogi
+              </a>
+              <span className="text-slate-300 hidden sm:inline">&bull;</span>
+              <a
+                href="https://portfolio.kidlat.workers.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-target inline-flex items-center gap-1 text-slate-700 hover:text-accent font-bold transition-colors"
+              >
+                Visit my Portfolio
+                <ArrowUpRight className="w-3.5 h-3.5 text-accent" />
               </a>
             </div>
             <div className="flex items-center gap-4">

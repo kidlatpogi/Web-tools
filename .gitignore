@@ -31,3 +31,7 @@ pnpm-debug.log*
 
 # Project Documentation (per user requirement)
 Documentation.md
+
+# Admin and Maintenance Scripts
+scripts/admin.mjs
+scripts/*.mjs
