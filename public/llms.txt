@@ -2,7 +2,7 @@
 > An exhaustive, research-backed directory compiling essential developer utilities, IDEs, AI coding assistants, free CS certifications, UI inspiration, typography, and student perks.
 
 ## Main Links
-- Homepage & Directory: https://web-tools.pages.dev/
+- Homepage & Directory: https://web-tools.kidlat.workers.dev/
 - Creator Portfolio: https://portfolio.kidlat.workers.dev/
 - GitHub Repository: https://github.com/kidlatpogi/Web-tools
 
