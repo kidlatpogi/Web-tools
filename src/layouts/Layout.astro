@@ -19,10 +19,54 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#C44900" />
+    <meta name="color-scheme" content="light" />
+
     <!-- Primary SEO Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
+    <meta name="author" content="kidlatpogi" />
+    <meta name="keywords" content="developer tools, CS student perks, free certifications, AI code assistants, UI inspiration, typography, developer utilities, Cisco NetAcad, freeCodeCamp, Supabase" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:site_name" content="Web-Tools" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <!-- Schema.org JSON-LD Structured Data for Directory/Software Application -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Web-Tools",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "description": "Curated directory of essential developer tools, AI coding assistants, free computer science certifications, typography archives, and student perks.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "kidlatpogi",
+          "url": "https://github.com/kidlatpogi"
+        }
+      }
+    </script>
 
     <!-- Preconnects for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

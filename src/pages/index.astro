@@ -54,9 +54,9 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
 
-      <!-- Descriptive Narrative (Fixed Grammar & Spacing) -->
+      <!-- Descriptive Narrative -->
       <p class="font-sans text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl leading-relaxed my-5 sm:my-6 px-2">
-        An exhaustive, research-backed repository compiling essential developer utilities ? from{' '}
+        An exhaustive, research-backed repository compiling essential developer utilities — from{' '}
         <strong class="text-slate-900 font-semibold">IDEs</strong>,{' '}
         <strong class="text-slate-900 font-semibold">AI Agents</strong>, and{' '}
         <strong class="text-slate-900 font-semibold">AI Chatbots</strong> to{' '}
@@ -67,7 +67,7 @@ const currentYear = new Date().getFullYear();
       </p>
 
       <!-- Quick Action Button -->
-      <div class="flex items-center justify-center mt-1 mb-8 sm:mb-10">
+      <div class="flex items-center justify-center mt-1 mb-2 sm:mb-4">
         <a
           href="#directory"
           class="cursor-target inline-flex items-center gap-2 px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-accent transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
@@ -75,39 +75,6 @@ const currentYear = new Date().getFullYear();
           Explore {allTools.length} Tools
           <ArrowUpRight className="w-4 h-4" />
         </a>
-      </div>
-
-      <!-- Stats Matrix Grid (Responsive 3-metric layout) -->
-      <div class="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-left px-2">
-        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
-          <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
-            Total Curated
-          </span>
-          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-slate-900">
-            {allTools.length}+
-          </div>
-          <span class="font-sans text-xs text-slate-500">Verified Developer Tools</span>
-        </div>
-
-        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
-          <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
-            Categories
-          </span>
-          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-accent">
-            {categories.length}
-          </div>
-          <span class="font-sans text-xs text-slate-500">Domain Classifications</span>
-        </div>
-
-        <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200 backdrop-blur-sm cursor-target hover:border-accent transition-all shadow-xs">
-          <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-1">
-            Pricing Models
-          </span>
-          <div class="font-clash-semibold text-2xl sm:text-3xl font-bold text-slate-900">
-            100%
-          </div>
-          <span class="font-sans text-xs text-slate-500">Free / Freemium / Student</span>
-        </div>
       </div>
 
     </section>

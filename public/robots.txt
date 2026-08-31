@@ -1,0 +1,4 @@
+# Web-Tools: Crawler Directives
+# Disallow all automated crawlers and scrapers
+User-agent: *
+Disallow: /

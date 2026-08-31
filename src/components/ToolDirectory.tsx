@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import type { ToolItem, CategoryInfo, CategoryId, PricingType } from '../types/tool';
 import { ToolCard } from './ToolCard';
 import {
@@ -19,7 +19,9 @@ import {
   Check,
   Copy,
   Info,
-  ArrowUpDown
+  ArrowUpDown,
+  ShieldCheck,
+  Scale
 } from 'lucide-react';
 
 interface ToolDirectoryProps {
@@ -43,7 +45,29 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
   const [selectedPricing, setSelectedPricing] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'default' | 'az' | 'za'>('default');
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null);
+  const [showPolicyModal, setShowPolicyModal] = useState(false);
   const [modalCopied, setModalCopied] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Global Keyboard Shortcuts (/ to search, Esc to close/clear)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === '/' && document.activeElement !== searchInputRef.current) {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+      } else if (e.key === 'Escape') {
+        if (showPolicyModal) {
+          setShowPolicyModal(false);
+        } else if (selectedTool) {
+          setSelectedTool(null);
+        } else if (searchQuery) {
+          setSearchQuery('');
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedTool, showPolicyModal, searchQuery]);
 
   // Category item count mapping
   const categoryCounts = useMemo(() => {
@@ -113,20 +137,28 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
           <div className="relative flex items-center">
             <Search className="absolute left-4 w-4 sm:w-5 h-4 sm:h-5 text-slate-400 pointer-events-none" />
             <input
+              ref={searchInputRef}
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by name, category, tag (e.g. Cursor, AI, Icons, Harvard)..."
-              className="w-full pl-11 sm:pl-12 pr-10 py-3.5 sm:py-4 rounded-2xl bg-white/90 backdrop-blur-md border-2 border-slate-200/90 text-slate-900 placeholder:text-slate-400 font-sans text-xs sm:text-base focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/10 shadow-sm transition-all cursor-target"
+              placeholder="Search tools, topics, tags (e.g. NetAcad, React, AI, Free Certs)..."
+              className="w-full pl-11 sm:pl-12 pr-20 py-3.5 sm:py-4 rounded-2xl bg-white/90 backdrop-blur-md border-2 border-slate-200/90 text-slate-900 placeholder:text-slate-400 font-sans text-xs sm:text-base focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/10 shadow-sm transition-all cursor-target"
             />
-            {searchQuery && (
+            {searchQuery ? (
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
                 className="absolute right-3 p-1.5 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition-colors cursor-target"
+                title="Clear search"
               >
                 <X className="w-4 h-4" />
               </button>
+            ) : (
+              <div className="absolute right-3.5 hidden sm:flex items-center gap-1 pointer-events-none">
+                <kbd className="px-2 py-0.5 text-[11px] font-mono font-bold text-slate-400 bg-slate-100 border border-slate-200 rounded-md shadow-2xs">
+                  /
+                </kbd>
+              </div>
             )}
           </div>
         </div>
@@ -406,6 +438,134 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
                 Launch Tool
                 <ArrowUpRight className="w-4 h-4" />
               </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Persistent Legal Notice & Disclaimer Bar */}
+      <div className="mt-12 p-4 sm:p-5 rounded-2xl bg-white/70 border border-slate-200/80 backdrop-blur-xs flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+        <div className="flex items-start sm:items-center gap-3">
+          <div className="p-2 rounded-xl bg-accent/10 text-accent shrink-0">
+            <Scale className="w-4 h-4" />
+          </div>
+          <p className="font-sans text-xs text-slate-600 leading-relaxed">
+            <strong className="text-slate-900 font-semibold">Independent Curation:</strong> All trademarks, product names, and brand assets displayed belong to their respective copyright holders. We do not host or own third-party services.
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setShowPolicyModal(true)}
+          className="cursor-target shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-accent hover:text-slate-900 hover:underline inline-flex items-center gap-1.5"
+        >
+          <ShieldCheck className="w-3.5 h-3.5" />
+          Legal Disclaimer &amp; Privacy Policy &rarr;
+        </button>
+      </div>
+
+      {/* Legal Disclaimer & Privacy Policy Modal */}
+      {showPolicyModal && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="policy-modal-title"
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-xs transition-opacity animate-in fade-in duration-200"
+          onClick={() => setShowPolicyModal(false)}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-white border-2 border-slate-200 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 flex flex-col gap-5 text-left"
+          >
+            {/* Close Button */}
+            <button
+              type="button"
+              onClick={() => setShowPolicyModal(false)}
+              className="cursor-target absolute top-4 sm:top-5 right-4 sm:right-5 p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-800 transition-colors"
+              title="Close legal policy"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Modal Title */}
+            <div className="flex items-center gap-3 pr-8 border-b border-slate-100 pb-4">
+              <div className="p-2.5 rounded-xl bg-accent/10 text-accent">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <div>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-slate-400 font-bold block">
+                  Legal Compliance &bull; Attribution &bull; Terms
+                </span>
+                <h2 id="policy-modal-title" className="font-clash-semibold text-2xl sm:text-3xl font-bold text-slate-900">
+                  Legal Disclaimer &amp; Privacy Policy
+                </h2>
+              </div>
+            </div>
+
+            {/* Policy Content */}
+            <div className="space-y-4 font-sans text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <div>
+                <h3 className="font-clash-semibold text-base font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  1. Trademark &amp; Intellectual Property Attribution
+                </h3>
+                <p>
+                  <strong>Web-Tools</strong> is an independent, open-source educational directory and aggregation platform. All product names, trademarks, registered trademarks, logos, brand names, and service marks referenced on this website are the property of their respective owners. Their identification and listing on Web-Tools are strictly for educational, informational, and indexing purposes and do not imply any affiliation, sponsorship, or endorsement by the trademark holders.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-clash-semibold text-base font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  2. Third-Party Content &amp; External Links Disclaimer
+                </h3>
+                <p>
+                  We do not own, operate, manage, or host any of the third-party software, applications, platforms, cloud compute providers, or educational certification portals indexed in this directory. All outbound links navigate directly to official external domains. Pricing tiers, student discounts, promotional credits, and feature availabilities are determined independently by respective operators and are subject to change without notice.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-clash-semibold text-base font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  3. Privacy &amp; Data Collection Statement
+                </h3>
+                <p>
+                  Web-Tools is built with a <strong>privacy-first</strong> ethos:
+                </p>
+                <ul className="list-disc pl-5 mt-1 space-y-1 text-slate-700">
+                  <li><strong>Zero Tracking:</strong> We do not track personal identifying information (PII) or sell user data to advertising brokers.</li>
+                  <li><strong>Client-Side Processing:</strong> All searches, category filter queries, clipboard operations, and sorting logic execute 100% locally in your browser.</li>
+                  <li><strong>No Cookies:</strong> We do not deploy third-party advertising or cross-site tracking cookies.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-clash-semibold text-base font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  4. DMCA &amp; Takedown Requests
+                </h3>
+                <p>
+                  If you are a copyright or trademark owner and wish to update, modify, or remove your listing or intellectual property from our public index, please submit an issue or pull request directly on our official{' '}
+                  <a
+                    href="https://github.com/kidlatpogi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent font-semibold hover:underline"
+                  >
+                    GitHub repository
+                  </a>
+                  . Inquiries are processed promptly.
+                </p>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="flex items-center justify-between pt-4 border-t border-slate-100">
+              <span className="font-mono text-[11px] text-slate-400">
+                Last updated: August 2026
+              </span>
+              <button
+                type="button"
+                onClick={() => setShowPolicyModal(false)}
+                className="cursor-target px-5 py-2 rounded-xl bg-slate-900 hover:bg-accent text-white font-mono text-xs font-bold uppercase tracking-wider transition-colors"
+              >
+                I Understand
+              </button>
             </div>
           </div>
         </div>

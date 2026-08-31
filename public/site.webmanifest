@@ -1,0 +1,17 @@
+{
+  "name": "Web-Tools — Curated Developer & Student Arsenal",
+  "short_name": "Web-Tools",
+  "description": "Comprehensive curated directory of IDEs, AI Agents, AI Chatbots, Design Inspiration, Free Certifications, Typography, Assets, and Student Perks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f8f8",
+  "theme_color": "#C44900",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
