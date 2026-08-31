@@ -343,30 +343,6 @@
     ]
   },
   {
-    "id": "continue-dev",
-    "name": "Continue.dev",
-    "url": "https://www.continue.dev/",
-    "description": "Leading open-source AI code assistant allowing developers to connect any local model (Ollama) or API provider into VS Code and JetBrains.",
-    "category": "ai-agents",
-    "categoryName": "AI Agents & Code Assistants",
-    "pricing": "Open Source",
-    "tags": [
-      "Open Source",
-      "Local LLM",
-      "VS Code",
-      "JetBrains"
-    ],
-    "featured": false,
-    "icon": "continue",
-    "previewImage": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
-    "keyFeatures": [
-      "Connects to Ollama, LM Studio, or Cloud APIs",
-      "Custom slash commands and documentation index",
-      "Zero telemetry and private local data option",
-      "Inline edits and sidebar chat"
-    ]
-  },
-  {
     "id": "supermaven",
     "name": "Supermaven",
     "url": "https://supermaven.com/",
@@ -1575,32 +1551,6 @@
       "Free automatic SSL and custom domain routing",
       "Integrated Cloudflare D1 (SQL) and KV databases"
     ]
-  },
-  {
-    "id": "nu-dasmarinas",
-    "name": "NU Dasmariñas Online Services",
-    "url": "https://www.national-u.edu.ph/",
-    "description": "Official online portal and academic hub for National University Dasmariñas, providing students and faculty with access to enrollment, academic records, and university applications.",
-    "category": "student-perks",
-    "categoryName": "Student Perks & Free Tiers",
-    "pricing": "Free with Student ID",
-    "tags": [
-      "University",
-      "Student Portal",
-      "Academic",
-      "Education",
-      "NU Dasma"
-    ],
-    "featured": false,
-    "icon": "graduation-cap",
-    "previewImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
-    "keyFeatures": [
-      "Centralized student portal and enrollment management",
-      "Access to grades, curricula, and schedule assessments",
-      "Campus learning management system (LMS) integrations",
-      "University announcements and student online applications"
-    ],
-    "studentPerk": "Full institutional access to academic portals and digital services for enrolled NU students"
   },
   {
     "id": "gizmo-ai",
@@ -3210,6 +3160,289 @@
       "Quizzes and practical hands-on assessments",
       "Verifiable course completion certificate",
       "Designed by Microsoft MVP certified instructors"
+    ]
+  },
+  {
+    "id": "google-one",
+    "name": "Google One & Gemini Advanced",
+    "url": "https://one.google.com/",
+    "description": "Google's cloud storage and AI subscription offering 15GB free cloud storage across Drive, Gmail, and Photos, plus exclusive student trial promotions for Gemini Advanced with 2TB storage.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Google",
+      "Google One",
+      "Cloud Storage",
+      "Gemini Advanced",
+      "Drive",
+      "Student Perk"
+    ],
+    "featured": true,
+    "icon": "cloud",
+    "previewImage": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "15GB free cloud storage across Google Drive, Gmail, and Google Photos",
+      "Gemini 1.5 Pro AI model integration inside Google Docs, Sheets, and Gmail",
+      "Automatic multi-device device backup, encryption, and family sharing",
+      "Student trial perks and promotional discounts on 2TB AI Premium plans"
+    ],
+    "studentPerk": "Free 15GB lifetime storage + promotional student access to Google One AI Premium & Gemini Advanced"
+  },
+  {
+    "id": "ilovepdf",
+    "name": "iLovePDF",
+    "url": "https://www.ilovepdf.com/",
+    "description": "All-in-one web toolkit to merge, split, compress, convert, edit, and sign PDF documents directly in the browser with zero software installation.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "PDF Tools",
+      "Document Conversion",
+      "Compression",
+      "OCR",
+      "Productivity"
+    ],
+    "featured": true,
+    "icon": "file-text",
+    "previewImage": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Merge, split, and compress large PDF files",
+      "Convert PDF to Word, Excel, PowerPoint, and JPG",
+      "OCR text recognition and PDF encryption/unlocking",
+      "100% free web-based processing"
+    ],
+    "studentPerk": "Generous free tier with batch file processing for academic assignments"
+  },
+  {
+    "id": "figma",
+    "name": "Figma & FigJam",
+    "url": "https://www.figma.com/",
+    "description": "Industry-standard collaborative interface design and prototyping tool featuring vector networks, design systems, auto-layout, and interactive FigJam whiteboards.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "UI/UX Design",
+      "Prototyping",
+      "Wireframing",
+      "FigJam",
+      "Collaboration"
+    ],
+    "featured": true,
+    "icon": "figma",
+    "previewImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time multi-user multiplayer canvas collaboration",
+      "Advanced auto-layout, design tokens, and component variants",
+      "Interactive prototyping with transitions and smart animate",
+      "Massive community plugin ecosystem and design system libraries"
+    ],
+    "studentPerk": "100% Free Figma Professional plan for students and educators with verified school email"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "url": "https://www.canva.com/",
+    "description": "Intuitive visual design platform for creating pitch decks, project presentations, system architecture infographics, posters, and resume graphics.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "Graphic Design",
+      "Presentations",
+      "Infographics",
+      "Posters",
+      "Social Media"
+    ],
+    "featured": true,
+    "icon": "palette",
+    "previewImage": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Thousands of curated templates for presentations and documents",
+      "Drag-and-drop graphic editor with rich asset libraries",
+      "Brand kits, background remover, and chart visualizers",
+      "Collaborative team editing and export to PDF/PNG/PPTX"
+    ],
+    "studentPerk": "Free educational tier and student discounts via Canva for Education"
+  },
+  {
+    "id": "draw-io",
+    "name": "Draw.io (diagrams.net)",
+    "url": "https://app.diagrams.net/",
+    "description": "Free and open-source diagramming software for building flowcharts, UML diagrams, database ER schemas, network topologies, and software architecture specs.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "Diagrams",
+      "Flowcharts",
+      "UML",
+      "ER Diagrams",
+      "System Architecture",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "git-commit",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100% free with no account or subscription required",
+      "Built-in shape libraries for AWS, GCP, Azure, Cisco, and UML",
+      "Direct storage integration with Google Drive, GitHub, and OneDrive",
+      "Export to SVG, PNG, PDF, and XML schema definitions"
+    ]
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "description": "Virtual collaborative whiteboard with a charming hand-drawn aesthetic, ideal for sketching software architectures, system design interviews, and wireframes.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "Whiteboard",
+      "System Design",
+      "Hand-drawn",
+      "Wireframing",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "pen-tool",
+    "previewImage": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hand-drawn sketch aesthetic with infinite zoomable canvas",
+      "Real-time end-to-end encrypted collaboration sessions",
+      "Extensive community shape libraries for frontend and cloud architecture",
+      "Export clean SVGs or embed directly into markdown and GitHub READMEs"
+    ]
+  },
+  {
+    "id": "carbon",
+    "name": "Carbon",
+    "url": "https://carbon.now.sh/",
+    "description": "Create and share beautiful, customizable, syntax-highlighted images of your source code for documentation, presentations, tutorials, and social media.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Code Screenshots",
+      "Syntax Highlighting",
+      "Developer Tool",
+      "Snippets",
+      "Presentation"
+    ],
+    "featured": false,
+    "icon": "code",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Syntax highlighting for 100+ programming languages",
+      "Customizable window themes, padding, fonts, and drop shadows",
+      "Export to vector SVG or high-DPI PNG with one click",
+      "Direct tweet and GitHub Gist integration"
+    ]
+  },
+  {
+    "id": "regex101",
+    "name": "Regex101",
+    "url": "https://regex101.com/",
+    "description": "Interactive regular expression tester and real-time debugger supporting PCRE, Python, JavaScript, Golang, and Java flavors with automated step-by-step regex breakdowns.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Free",
+    "tags": [
+      "Regex",
+      "Regular Expressions",
+      "Debugger",
+      "Tester",
+      "Developer Utility"
+    ],
+    "featured": false,
+    "icon": "search",
+    "previewImage": "https://images.unsplash.com/photo-1516116211227-bbc17c385c78?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time regex syntax highlighting and match group visualizer",
+      "Detailed plain-English regex logic explanation",
+      "Interactive regex debugger and performance step counter",
+      "Searchable community regex library with unit test creation"
+    ]
+  },
+  {
+    "id": "devdocs",
+    "name": "DevDocs",
+    "url": "https://devdocs.io/",
+    "description": "Fast, clean, and offline-capable unified documentation browser combining 100+ programming language and framework docs in a single lightning-fast web app.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Open Source",
+    "tags": [
+      "API Documentation",
+      "Offline Docs",
+      "Developer Reference",
+      "Search",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "book-open",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant fuzzy search across JavaScript, Python, Rust, React, Go, and 100+ docs",
+      "Works 100% offline via local IndexedDB caching",
+      "Clean, distraction-free reading interface with dark mode",
+      "Keyboard-driven navigation for maximum developer ergonomics"
+    ]
+  },
+  {
+    "id": "tinypng",
+    "name": "TinyPNG",
+    "url": "https://tinypng.com/",
+    "description": "Smart lossy compression algorithm that reduces the file size of WebP, PNG, and JPEG images by up to 70% while preserving high visual quality and transparency.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Freemium",
+    "tags": [
+      "Image Compression",
+      "WebP",
+      "PNG",
+      "JPEG",
+      "Web Performance",
+      "Optimization"
+    ],
+    "featured": false,
+    "icon": "image",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Reduces web image asset payloads for faster website load times",
+      "Preserves alpha channel transparency in PNG and WebP files",
+      "Batch upload up to 20 images at once",
+      "Official developer REST API and Photoshop plugin"
+    ]
+  },
+  {
+    "id": "transform-tools",
+    "name": "Transform.tools",
+    "url": "https://transform.tools/",
+    "description": "All-in-one polyglot code converter turning JSON into TypeScript types, SVG into React JSX, HTML into JSX, CSS into Tailwind, and GraphQL into schema types instantly.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Open Source",
+    "tags": [
+      "Code Converter",
+      "JSON to TS",
+      "SVG to JSX",
+      "GraphQL",
+      "Polyglot",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "code-2",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant client-side conversion between 20+ frontend formats",
+      "JSON to TypeScript, Rust structs, Go structs, and Kotlin models",
+      "SVG to React / React Native / Vue / Svelte components",
+      "100% browser-based with zero data sent to external servers"
     ]
   }
 ]

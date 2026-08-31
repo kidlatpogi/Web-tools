@@ -362,7 +362,7 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
 
             {/* Student Perk Highlight */}
             {selectedTool.studentPerk && (
-              <div className="p-3.5 rounded-2xl bg-accent/10 border border-accent/20 flex items-start gap-3">
+              <div className="p-3.5 rounded-xs bg-accent/10 border border-accent/20 flex items-start gap-3">
                 <Gift className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-clash-semibold text-sm font-bold text-slate-900">
@@ -443,25 +443,46 @@ export const ToolDirectory: React.FC<ToolDirectoryProps> = ({ initialTools, cate
         </div>
       )}
 
-      {/* Persistent Legal Notice & Disclaimer Bar */}
-      <div className="mt-12 p-4 sm:p-5 rounded-2xl bg-white/70 border border-slate-200/80 backdrop-blur-xs flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
-        <div className="flex items-start sm:items-center gap-3">
-          <div className="p-2 rounded-xl bg-accent/10 text-accent shrink-0">
-            <Scale className="w-4 h-4" />
+      {/* Complete Responsive Footer with Copyright and Legal Disclaimer Below It */}
+      <footer className="w-full border-t border-slate-200/80 bg-white/80 backdrop-blur-md py-8 px-4 sm:px-6 md:px-12 mt-16 sm:mt-20">
+        <div className="max-w-[1400px] mx-auto flex flex-col gap-4 text-center sm:text-left">
+          {/* Top Row: Copyright, Author & Back to Top */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs font-mono text-slate-600">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+              <span>&copy; {new Date().getFullYear()} <strong className="text-slate-900">Web-Tools</strong>.</span>
+              <span>Made by</span>
+              <a
+                href="https://github.com/kidlatpogi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent font-bold hover:underline cursor-target"
+              >
+                kidlatpogi
+              </a>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="#directory" className="hover:text-accent font-medium transition-colors cursor-target">
+                Back to Top &uarr;
+              </a>
+            </div>
           </div>
-          <p className="font-sans text-xs text-slate-600 leading-relaxed">
-            <strong className="text-slate-900 font-semibold">Independent Curation:</strong> All trademarks, product names, and brand assets displayed belong to their respective copyright holders. We do not host or own third-party services.
-          </p>
+
+          {/* Bottom Row: Independent Curation & Legal Disclaimer below copyright */}
+          <div className="pt-4 border-t border-slate-200/60 flex flex-col md:flex-row items-center justify-between gap-3 text-left">
+            <p className="font-sans text-[11px] sm:text-xs text-slate-500 leading-relaxed max-w-3xl">
+              <strong className="text-slate-700 font-semibold">Independent Curation:</strong> All trademarks, product names, and brand assets displayed belong to their respective copyright holders. We do not host or own third-party services.
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowPolicyModal(true)}
+              className="cursor-target shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-accent hover:text-slate-900 hover:underline inline-flex items-center gap-1.5"
+            >
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Legal Disclaimer &amp; Privacy Policy &rarr;
+            </button>
+          </div>
         </div>
-        <button
-          type="button"
-          onClick={() => setShowPolicyModal(true)}
-          className="cursor-target shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-accent hover:text-slate-900 hover:underline inline-flex items-center gap-1.5"
-        >
-          <ShieldCheck className="w-3.5 h-3.5" />
-          Legal Disclaimer &amp; Privacy Policy &rarr;
-        </button>
-      </div>
+      </footer>
 
       {/* Legal Disclaimer & Privacy Policy Modal */}
       {showPolicyModal && (

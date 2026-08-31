@@ -65,7 +65,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool, onSelect }) => {
 
         {/* Student Perk Banner if present */}
         {tool.studentPerk && (
-          <div className="mt-3.5 p-2.5 rounded-xl bg-accent/5 border border-accent/15 flex items-start gap-2">
+          <div className="mt-3.5 p-2.5 rounded-xs bg-accent/5 border border-accent/20 flex items-start gap-2">
             <Gift className="w-4 h-4 text-accent shrink-0 mt-0.5" />
             <p className="font-sans text-[11px] sm:text-xs text-slate-800 font-medium leading-snug">
               <strong className="text-accent font-semibold">Student Perk:</strong> {tool.studentPerk}
