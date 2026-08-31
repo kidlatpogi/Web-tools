@@ -1,0 +1,3448 @@
+[
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "url": "https://code.visualstudio.com/",
+    "description": "Extensible source code editor developed by Microsoft with a massive extension marketplace, integrated Git, and remote development support.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Free",
+    "tags": [
+      "Editor",
+      "Extensions",
+      "Microsoft",
+      "Cross-Platform"
+    ],
+    "featured": true,
+    "icon": "vscode",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Rich marketplace with 50,000+ extensions",
+      "Built-in Git integration & terminal",
+      "Remote SSH, WSL & Container development",
+      "IntelliSense code completion"
+    ],
+    "studentPerk": "Included in GitHub Student Developer Pack"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "url": "https://www.cursor.com/",
+    "description": "An AI-first code editor fork of VS Code with smart auto-completions, multi-file codebase indexing, and natural language refactoring.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Freemium",
+    "tags": [
+      "AI-Native",
+      "VS Code Fork",
+      "Autocomplete",
+      "Copilot"
+    ],
+    "featured": true,
+    "icon": "cursor",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Full codebase indexing and semantic search",
+      "Cursor Tab with multi-line smart completions",
+      "Composer mode for multi-file editing",
+      "One-click import of all VS Code extensions"
+    ]
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf (Codeium)",
+    "url": "https://codeium.com/windsurf",
+    "description": "Next-generation agentic IDE featuring Cascade, an autonomous AI flow that writes, edits, and debugs multi-file software projects seamlessly.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Freemium",
+    "tags": [
+      "Agentic IDE",
+      "Cascade",
+      "AI Assistant",
+      "Productivity"
+    ],
+    "featured": true,
+    "icon": "windsurf",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Cascade agentic flow for deep codebase awareness",
+      "Real-time collaborative AI suggestions",
+      "Zero-config migration from VS Code",
+      "Ultra-fast context understanding"
+    ]
+  },
+  {
+    "id": "jetbrains",
+    "name": "JetBrains IDEs",
+    "url": "https://www.jetbrains.com/",
+    "description": "Industry-standard suite of professional IDEs (IntelliJ IDEA, WebStorm, PyCharm, CLion) with deep static analysis and refactoring.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "Enterprise",
+      "IntelliJ",
+      "WebStorm",
+      "PyCharm",
+      "Java",
+      "Python"
+    ],
+    "featured": true,
+    "icon": "jetbrains",
+    "previewImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Intelligent deep code analysis & refactoring",
+      "Built-in database tooling & profilers",
+      "Full suite: IntelliJ, WebStorm, PyCharm, CLion",
+      "First-class framework support"
+    ],
+    "studentPerk": "100% Free All Products Pack for students and faculty with .edu email"
+  },
+  {
+    "id": "zed",
+    "name": "Zed",
+    "url": "https://zed.dev/",
+    "description": "High-performance, multiplayer code editor engineered in Rust with GPU acceleration, instant startup, and native AI integration.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Open Source",
+    "tags": [
+      "Rust",
+      "GPU Accelerated",
+      "Multiplayer",
+      "Fast"
+    ],
+    "featured": false,
+    "icon": "zed",
+    "previewImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Sub-millisecond latency on keystrokes",
+      "Real-time collaborative multiplayer editing",
+      "Native support for local and remote LLMs",
+      "Clean, minimalistic design"
+    ]
+  },
+  {
+    "id": "neovim",
+    "name": "Neovim",
+    "url": "https://neovim.io/",
+    "description": "Hyperextensible Vim-based text editor built for extreme speed, Lua configuration, asynchronous architecture, and built-in LSP.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Open Source",
+    "tags": [
+      "Vim",
+      "Terminal",
+      "Lua",
+      "LSP",
+      "Lightweight"
+    ],
+    "featured": false,
+    "icon": "neovim",
+    "previewImage": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Built-in Language Server Protocol (LSP) client",
+      "Configurable in modern Lua",
+      "Ultra-low memory footprint",
+      "Extensible plugin ecosystem (Treesitter, Telescope)"
+    ]
+  },
+  {
+    "id": "positron",
+    "name": "Positron",
+    "url": "https://positron.posit.co/",
+    "description": "Next-generation data science IDE by Posit (makers of RStudio) built on Code-OSS specifically for Python and R exploratory data analysis.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Open Source",
+    "tags": [
+      "Data Science",
+      "Python",
+      "R",
+      "Posit",
+      "Notebooks"
+    ],
+    "featured": false,
+    "icon": "positron",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Dedicated data explorer & variable inspector",
+      "Integrated plot viewer and console",
+      "Native Jupyter and R console support",
+      "Extensible VS Code extension compatibility"
+    ]
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "url": "https://replit.com/",
+    "description": "Collaborative in-browser IDE supporting 50+ languages with instant deployment, real-time multiplayer coding, and AI assistance.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Freemium",
+    "tags": [
+      "Cloud IDE",
+      "Multiplayer",
+      "Hosting",
+      "Beginner-Friendly"
+    ],
+    "featured": false,
+    "icon": "replit",
+    "previewImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Zero setup browser-based environment",
+      "One-click hosting and database provisioning",
+      "Replit Agent for autonomous full-stack development",
+      "Collaborative multiplayer pair programming"
+    ]
+  },
+  {
+    "id": "idx",
+    "name": "Project IDX",
+    "url": "https://idx.google.com/",
+    "description": "Google cloud-based development workspace built on Code-OSS with built-in Gemini intelligence and multiplatform device emulators.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Free",
+    "tags": [
+      "Google",
+      "Cloud Workspace",
+      "Gemini AI",
+      "Emulators"
+    ],
+    "featured": false,
+    "icon": "google",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Pre-configured Linux VM with Nix environment",
+      "Android & iOS web simulators in browser",
+      "Built-in Gemini code assistance",
+      "Full-stack templates for Next.js, Flutter, Angular"
+    ]
+  },
+  {
+    "id": "sublime",
+    "name": "Sublime Text",
+    "url": "https://www.sublimetext.com/",
+    "description": "Ultra-responsive, lightweight text editor with GPU rendering, lightning-fast multi-tab search, and extensive syntax support.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Freemium",
+    "tags": [
+      "Lightweight",
+      "GPU Rendered",
+      "Fast",
+      "Multi-Cursor"
+    ],
+    "featured": false,
+    "icon": "sublime",
+    "previewImage": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "GPU accelerated user interface",
+      "Context-aware auto-complete",
+      "Multiple selections and split editing",
+      "Package Control plugin ecosystem"
+    ]
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview",
+    "description": "Anthropic agentic command-line tool that operates directly in your terminal, executes tests, searches git history, and completes refactors.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Paid",
+    "tags": [
+      "CLI",
+      "Anthropic",
+      "Terminal Agent",
+      "Autonomous"
+    ],
+    "featured": true,
+    "icon": "claude",
+    "previewImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Terminal-native execution and file edits",
+      "Understands entire git repositories",
+      "Runs test suites and self-corrects errors",
+      "Supports architectural refactoring"
+    ]
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "description": "AI pair programmer integrated into VS Code, JetBrains, and Visual Studio with inline completions, multi-turn chat, and PR assistance.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "GitHub",
+      "Pair Programmer",
+      "VS Code",
+      "JetBrains"
+    ],
+    "featured": true,
+    "icon": "github",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time inline code completions",
+      "Copilot Chat for debugging and refactoring",
+      "Copilot Workspace for issue-to-PR workflows",
+      "CLI terminal command explanations"
+    ],
+    "studentPerk": "Free access for verified students via GitHub Student Developer Pack"
+  },
+  {
+    "id": "aider",
+    "name": "Aider",
+    "url": "https://aider.chat/",
+    "description": "Command-line AI pair programmer that automatically creates clean git commits as it writes code, edits multiple files, and works with any LLM.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Open Source",
+    "tags": [
+      "CLI",
+      "Git-Aware",
+      "Terminal",
+      "BYOK"
+    ],
+    "featured": true,
+    "icon": "terminal",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Automatic sensible git commits per change",
+      "Repo map generation for AST-level context",
+      "Compatible with Sonnet 3.7, DeepSeek-R1, OpenAI",
+      "In-place terminal file diffing"
+    ]
+  },
+  {
+    "id": "cline",
+    "name": "Cline (Autonomous Dev)",
+    "url": "https://cline.bot/",
+    "description": "Autonomous coding agent extension for VS Code with the ability to create files, execute shell commands, and browse web documentation.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Open Source",
+    "tags": [
+      "VS Code Extension",
+      "Autonomous Agent",
+      "Open Source",
+      "MCP"
+    ],
+    "featured": true,
+    "icon": "bot",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Executes terminal commands with user approval",
+      "Full Model Context Protocol (MCP) support",
+      "Multi-step autonomous task completion",
+      "Supports any API key or local Ollama"
+    ]
+  },
+  {
+    "id": "supermaven",
+    "name": "Supermaven",
+    "url": "https://supermaven.com/",
+    "description": "Blazingly fast AI code completion engine with sub-100ms latency and a 1-million-token context window.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "Fast Autocomplete",
+      "1M Context",
+      "Low Latency"
+    ],
+    "featured": false,
+    "icon": "zap",
+    "previewImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1,000,000 token context window",
+      "Sub-100 millisecond completion latency",
+      "Works with VS Code, JetBrains, and Neovim",
+      "Understands long-range codebase relationships"
+    ]
+  },
+  {
+    "id": "bolt-new",
+    "name": "Bolt.new",
+    "url": "https://bolt.new/",
+    "description": "In-browser AI web development sandbox powered by WebContainers to prompt, run, edit, and deploy full-stack Node.js & React apps.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "WebContainers",
+      "Fullstack",
+      "Browser-Native",
+      "StackBlitz"
+    ],
+    "featured": true,
+    "icon": "bolt",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Runs complete Node.js stack in browser via WebContainers",
+      "Installs npm packages and runs live dev servers",
+      "One-click Netlify / Vercel deployment",
+      "Interactive visual and code editing"
+    ]
+  },
+  {
+    "id": "v0-vercel",
+    "name": "v0 by Vercel",
+    "url": "https://v0.dev/",
+    "description": "Generative UI platform that creates production-ready React, Next.js, and Tailwind CSS components from natural language prompts.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "Vercel",
+      "React",
+      "Tailwind",
+      "Generative UI",
+      "Frontend"
+    ],
+    "featured": true,
+    "icon": "vercel",
+    "previewImage": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Produces copy-paste React & Tailwind code",
+      "Built-in interactive component preview",
+      "Figma design upload and recreation",
+      "Direct export to Next.js or Shadcn UI"
+    ]
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "url": "https://lovable.dev/",
+    "description": "Autonomous AI full-stack engineer that generates entire web applications, databases, and UI interfaces from conversation.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "Full-Stack",
+      "App Builder",
+      "Supabase",
+      "No-Code/Code"
+    ],
+    "featured": false,
+    "icon": "heart",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Automated Supabase database wiring and auth",
+      "Generates clean React and Tailwind architectures",
+      "Syncs changes directly to GitHub repos",
+      "Interactive visual feedback mode"
+    ]
+  },
+  {
+    "id": "swe-agent",
+    "name": "SWE-agent",
+    "url": "https://swe-agent.com/",
+    "description": "Open-source research agent by Princeton NLP that autonomously resolves real GitHub issues using custom agent-computer interfaces.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Open Source",
+    "tags": [
+      "Princeton",
+      "Benchmark",
+      "Autonomous",
+      "Open Source"
+    ],
+    "featured": false,
+    "icon": "git-pull-request",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "State-of-the-art SWE-bench benchmark scores",
+      "Agent-Computer Interface (ACI) for code navigation",
+      "Autonomous bug diagnosis and test verification",
+      "Runs in isolated Docker environments"
+    ]
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com/",
+    "description": "Flagship conversational model by OpenAI featuring GPT-4o, reasoning models (o1/o3-mini), Advanced Data Analysis, Canvas, and web search.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "OpenAI",
+      "GPT-4o",
+      "Reasoning",
+      "Canvas",
+      "General AI"
+    ],
+    "featured": true,
+    "icon": "openai",
+    "previewImage": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Canvas interactive workspace for coding & writing",
+      "Advanced Data Analysis with Python sandbox",
+      "Real-time web browsing & search",
+      "Voice mode & multimodal vision inputs"
+    ]
+  },
+  {
+    "id": "claude-ai",
+    "name": "Claude",
+    "url": "https://claude.ai/",
+    "description": "Anthropic frontier AI assistant renowned for state-of-the-art coding abilities, nuanced reasoning, and the Claude 3.7 Sonnet hybrid model.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Anthropic",
+      "Sonnet 3.7",
+      "Artifacts",
+      "Coding LLM"
+    ],
+    "featured": true,
+    "icon": "claude",
+    "previewImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Interactive Artifacts for running React & HTML code live",
+      "Hybrid standard & extended thinking reasoning mode",
+      "200k token context window",
+      "Superior coding and architecture comprehension"
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com/",
+    "description": "Google multimodal AI model featuring an industry-leading 2-million-token context window and deep integration with Google Workspace and search.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Google",
+      "Gemini 2.0",
+      "Multimodal",
+      "Large Context"
+    ],
+    "featured": true,
+    "icon": "gemini",
+    "previewImage": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Massive 1M - 2M token context capability",
+      "Deep integration with Google Docs, Drive, and YouTube",
+      "Native multimodal understanding (audio, video, code, text)",
+      "Fast response generation and Google search grounding"
+    ]
+  },
+  {
+    "id": "deepseek-chat",
+    "name": "DeepSeek AI",
+    "url": "https://chat.deepseek.com/",
+    "description": "Open-weights reasoning powerhouse offering DeepSeek-R1 and DeepSeek-V3 for math, coding, and logical reasoning at zero cost.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Free",
+    "tags": [
+      "DeepSeek-R1",
+      "Open Weights",
+      "Reasoning",
+      "Math",
+      "Coding"
+    ],
+    "featured": true,
+    "icon": "deepseek",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Chain-of-thought visible reasoning process",
+      "Exceptional algorithmic and competitive programming ability",
+      "Free web interface with DeepSeek-R1 access",
+      "Ultra-low API pricing for developers"
+    ]
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "url": "https://www.perplexity.ai/",
+    "description": "AI-powered conversational search engine delivering concise answers backed by real-time citations, academic papers, and computational answers.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "AI Search",
+      "Citations",
+      "Research",
+      "Academic"
+    ],
+    "featured": true,
+    "icon": "perplexity",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time cited web research and answers",
+      "Pro search with multi-step reasoning queries",
+      "Focus modes: Academic, YouTube, Reddit, Writing, Computational",
+      "Perplexity Spaces for team knowledge management"
+    ]
+  },
+  {
+    "id": "mistral-chat",
+    "name": "Mistral Le Chat",
+    "url": "https://chat.mistral.ai/",
+    "description": "Conversational interface powered by Mistral AI frontier models including Mistral Large, Codestral, and Pixtral vision.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Mistral",
+      "Codestral",
+      "European AI",
+      "Open Weights"
+    ],
+    "featured": false,
+    "icon": "mistral",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Access to Codestral for fast 80+ language coding",
+      "Web search and canvas editing features",
+      "Pixtral visual document understanding",
+      "Privacy-centric European AI compliance"
+    ]
+  },
+  {
+    "id": "phind",
+    "name": "Phind",
+    "url": "https://phindai.org/",
+    "description": "Intelligent search engine and AI assistant fine-tuned specifically for software engineers with fast code answers and live web documentation.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Developer Search",
+      "Coding Engine",
+      "Fast Answers"
+    ],
+    "featured": false,
+    "icon": "phind",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Fine-tuned models for precise programming questions",
+      "Direct links to official docs and Stack Overflow",
+      "VS Code extension integration",
+      "Instant answers with code snippets"
+    ]
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "url": "https://ollama.com/",
+    "description": "Lightweight tool to get up and running with Llama 3, DeepSeek-R1, Mistral, and other open-source LLMs locally on your own computer.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Open Source",
+    "tags": [
+      "Local AI",
+      "Offline",
+      "Privacy",
+      "CLI",
+      "Self-Hosted"
+    ],
+    "featured": true,
+    "icon": "ollama",
+    "previewImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Run LLMs 100% offline with zero cloud latency",
+      "One command install: ollama run llama3",
+      "OpenAI-compatible local REST API endpoint",
+      "GPU acceleration with Apple Silicon and CUDA"
+    ]
+  },
+  {
+    "id": "open-webui",
+    "name": "Open WebUI",
+    "url": "https://openwebui.com/",
+    "description": "Self-hosted, ChatGPT-like web interface for Ollama and OpenAI-compatible APIs with RAG, document chats, and multi-model support.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Open Source",
+    "tags": [
+      "Self-Hosted UI",
+      "Ollama Web",
+      "RAG",
+      "Docker"
+    ],
+    "featured": false,
+    "icon": "layout",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Feature-parity with ChatGPT in a private self-hosted UI",
+      "Built-in document ingestion & RAG chat",
+      "Multi-user role management and authentication",
+      "Voice input & speech synthesis support"
+    ]
+  },
+  {
+    "id": "huggingface-chat",
+    "name": "Hugging Face Chat",
+    "url": "https://huggingface.co/chat/",
+    "description": "Free chat platform to explore and test cutting-edge open-source community AI models without API keys or credit card registration.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Free",
+    "tags": [
+      "Hugging Face",
+      "Open Source",
+      "Community Models"
+    ],
+    "featured": false,
+    "icon": "smile",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Switch between top open-source models with one click",
+      "Custom community assistant bots",
+      "Web search integration enabled",
+      "Direct link to Hugging Face Model Hub"
+    ]
+  },
+  {
+    "id": "mobbin",
+    "name": "Mobbin",
+    "url": "https://mobbin.com/",
+    "description": "The world's largest mobile and web design library with thousands of searchable real-world screenshots, user flows, and interaction patterns.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "Mobile UX",
+      "Web UI",
+      "Screenshots",
+      "User Flows"
+    ],
+    "featured": true,
+    "icon": "smartphone",
+    "previewImage": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "300,000+ iOS, Android & Web screenshots",
+      "Search by UI elements, flows, and interactions",
+      "Flow breakdowns from onboarding to checkout",
+      "High-res exports for Figma"
+    ]
+  },
+  {
+    "id": "godly",
+    "name": "Godly",
+    "url": "https://godly.website/",
+    "description": "Astronomically curated web design inspiration showcasing modern, brutalist, and high-craft digital experiences.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Web Design",
+      "Brutalist",
+      "Micro-interactions",
+      "Curated"
+    ],
+    "featured": true,
+    "icon": "sparkles",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Handpicked websites with top-tier craft & animation",
+      "Video preview on hover for micro-interactions",
+      "Filter by style, typography, and industry",
+      "Daily updates of award-winning websites"
+    ]
+  },
+  {
+    "id": "shadcn-ui",
+    "name": "Shadcn UI",
+    "url": "https://ui.shadcn.com/",
+    "description": "Accessible and customizable component collection built with Radix UI and Tailwind CSS that you copy and paste directly into your apps.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "React",
+      "Tailwind",
+      "Radix UI",
+      "Components",
+      "Clean"
+    ],
+    "featured": true,
+    "icon": "component",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Full ownership of code (no npm bundle lock-in)",
+      "WAI-ARIA accessible primitives via Radix",
+      "Seamless CLI install: npx shadcn@latest add",
+      "Extensive ecosystem of community blocks"
+    ]
+  },
+  {
+    "id": "aceternity-ui",
+    "name": "Aceternity UI",
+    "url": "https://ui.aceternity.com/",
+    "description": "Trendy, animated React and Tailwind CSS UI components with Framer Motion, 3D card tilts, and canvas shader effects.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "Framer Motion",
+      "3D UI",
+      "Tailwind",
+      "Animated Components"
+    ],
+    "featured": true,
+    "icon": "motion",
+    "previewImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Modern landing page hero sections & background effects",
+      "Framer Motion animations and 3D card physics",
+      "Copy-paste code for Next.js & React",
+      "Spotlight, Bento grids, and Aurora backgrounds"
+    ]
+  },
+  {
+    "id": "magic-ui",
+    "name": "Magic UI",
+    "url": "https://magicui.design/",
+    "description": "Curated library of 50+ animated components built with React, Typescript, Tailwind CSS, and Framer Motion for modern landing pages.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "Animated UI",
+      "React",
+      "Tailwind",
+      "Landing Pages"
+    ],
+    "featured": false,
+    "icon": "wand",
+    "previewImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Marquee components, dock bars, and animated beams",
+      "Interactive particles, retro grids, and globe views",
+      "Designed specifically for high-converting marketing pages",
+      "Tailwind CSS v4 ready"
+    ]
+  },
+  {
+    "id": "dribbble",
+    "name": "Dribbble",
+    "url": "https://dribbble.com/",
+    "description": "Global design community and portfolio platform for discovering visual inspiration, UI/UX mockups, animations, and branding.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "Design Showcase",
+      "UI/UX",
+      "Portfolio",
+      "Illustration"
+    ],
+    "featured": false,
+    "icon": "dribbble",
+    "previewImage": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Millions of UI shots from world-class designers",
+      "Color palette search and extraction",
+      "Design job board and freelance opportunities",
+      "Animation and 3D design feeds"
+    ]
+  },
+  {
+    "id": "awwwards",
+    "name": "Awwwards",
+    "url": "https://www.awwwards.com/",
+    "description": "Prestigious awards platform recognizing the creativity, design, and technical mastery of web developers and digital agencies.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Awards",
+      "Creative Web",
+      "ThreeJS",
+      "Agency Work"
+    ],
+    "featured": false,
+    "icon": "award",
+    "previewImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Site of the Day & Site of the Month showcases",
+      "Scores evaluated on Design, Usability, Creativity, and Content",
+      "Developer notes on stack & shaders used",
+      "Curated collections of experimental web tech"
+    ]
+  },
+  {
+    "id": "land-book",
+    "name": "Land-book",
+    "url": "https://land-book.com/",
+    "description": "Curated gallery of the finest landing pages, web apps, portfolios, and blogs with clean categorization.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Landing Pages",
+      "SaaS Design",
+      "Web Inspiration"
+    ],
+    "featured": false,
+    "icon": "browser",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Categorized by Landing Page, Portfolio, Blog, and SaaS",
+      "Full-page desktop and mobile screen captures",
+      "Filter by industry and design style",
+      "Free design resources and template links"
+    ]
+  },
+  {
+    "id": "page-flows",
+    "name": "Page Flows",
+    "url": "https://pageflows.com/",
+    "description": "User flow inspiration library with video recordings of onboarding, upgrading, and navigation flows from leading apps.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "UX Flows",
+      "Video Recordings",
+      "Onboarding",
+      "Product Design"
+    ],
+    "featured": false,
+    "icon": "play-circle",
+    "previewImage": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "4,000+ interactive video recordings of user journeys",
+      "Real UX patterns from Spotify, Stripe, Notion, Uber",
+      "Mobile and desktop UX comparison",
+      "Analyzed UX step breakdowns"
+    ]
+  },
+  {
+    "id": "21st-dev",
+    "name": "21st.dev",
+    "url": "https://21st.dev/",
+    "description": "The component ecosystem for design engineers featuring community-built React and Tailwind micro-interactions with live previews.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "Design Engineer",
+      "React",
+      "Tailwind",
+      "Micro-interactions"
+    ],
+    "featured": false,
+    "icon": "layers",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Community repository of polished interactive UI components",
+      "One-click copy code for Tailwind & Framer Motion",
+      "Live interactive component playground",
+      "Supports React, Svelte, and Vue"
+    ]
+  },
+  {
+    "id": "freecodecamp",
+    "name": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/",
+    "description": "Verified certifications in Responsive Web Design, JavaScript Algorithms, Front End Libraries, Data Analysis, and Machine Learning.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Certifications",
+      "Full-Stack",
+      "Interactive",
+      "JavaScript",
+      "Python"
+    ],
+    "featured": true,
+    "icon": "award",
+    "previewImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "10+ verified 300-hour developer certifications",
+      "100% free interactive curriculum in browser",
+      "Real portfolio projects required for certification",
+      "Active global community with freeCodeCamp forum"
+    ]
+  },
+  {
+    "id": "cs50",
+    "name": "CS50x: Intro to Computer Science",
+    "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
+    "description": "Harvard University world-famous introduction to computer science covering C, Python, SQL, algorithms, and data structures with a free certificate option.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Harvard",
+      "CS Fundamentals",
+      "C",
+      "Python",
+      "Algorithms"
+    ],
+    "featured": true,
+    "icon": "graduation-cap",
+    "previewImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Taught by Professor David J. Malan",
+      "Free certificate issued by CS50 upon 70%+ score",
+      "Rigorous problem sets in C, Python, and SQL",
+      "Cloud-based VS Code environment for homework"
+    ]
+  },
+  {
+    "id": "google-cloud-skills",
+    "name": "Google Cloud Skills Boost",
+    "url": "https://www.cloudskillsboost.google/",
+    "description": "Official interactive hands-on labs and skill badges covering Google Cloud infrastructure, Kubernetes, BigQuery, and Vertex AI.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Google Cloud",
+      "Kubernetes",
+      "Badges",
+      "Cloud Architecture"
+    ],
+    "featured": true,
+    "icon": "cloud",
+    "previewImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Verifiable Google Cloud Skill Badges for LinkedIn",
+      "Real GCP console sandbox access without personal billing",
+      "Paths for Cloud Architect, Data Engineer, and DevOps",
+      "Student Innovators program access"
+    ]
+  },
+  {
+    "id": "ms-learn",
+    "name": "Microsoft Learn & Applied Skills",
+    "url": "https://learn.microsoft.com/",
+    "description": "Interactive sandbox learning paths and official verifiable Applied Skills credentials for Azure cloud, .NET, AI, and DevOps.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Microsoft",
+      "Azure",
+      "Applied Skills",
+      "Credentials"
+    ],
+    "featured": true,
+    "icon": "microsoft",
+    "previewImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Free verifiable Microsoft Applied Skills credentials",
+      "Browser-based interactive Azure sandboxes",
+      "Exam prep courses for AZ-900, AI-900, DP-900",
+      "Student discounts for official proctored certs"
+    ]
+  },
+  {
+    "id": "aws-skill-builder",
+    "name": "AWS Skill Builder",
+    "url": "https://explore.skillbuilder.aws/",
+    "description": "600+ free digital courses and official AWS Cloud Quest game-based learning for cloud architecture and solutions.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "AWS",
+      "Cloud Quest",
+      "Digital Badges",
+      "Architecture"
+    ],
+    "featured": false,
+    "icon": "aws",
+    "previewImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "AWS Cloud Quest role-playing educational game",
+      "Official digital badges on Credly",
+      "Free AWS Practitioner exam readiness courses",
+      "Self-paced architectural diagrams labs"
+    ]
+  },
+  {
+    "id": "cisco-netacad",
+    "name": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/",
+    "description": "Free, verified digital badge courses in Cybersecurity, Networking Basics, Python programming, and Linux OS.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Cisco",
+      "Cybersecurity",
+      "Networking",
+      "Packet Tracer"
+    ],
+    "featured": false,
+    "icon": "shield",
+    "previewImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Cisco Packet Tracer simulation software access",
+      "Official verifiable Credly digital badges",
+      "Cybersecurity Essentials & Network Defense courses",
+      "Python for Network Automation tracks"
+    ]
+  },
+  {
+    "id": "mongodb-university",
+    "name": "MongoDB University",
+    "url": "https://learn.mongodb.com/",
+    "description": "Comprehensive database courses, interactive labs, and certification preparation for MongoDB document databases.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "MongoDB",
+      "NoSQL",
+      "Database",
+      "Backend"
+    ],
+    "featured": false,
+    "icon": "database",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hands-on MongoDB Atlas cloud labs",
+      "Free course completion certificates",
+      "Covers Aggregation Pipelines, Indexes, and Schema Design",
+      "Official Node.js and Python drivers training"
+    ]
+  },
+  {
+    "id": "postman-student",
+    "name": "Postman Student Expert",
+    "url": "https://academy.postman.com/",
+    "description": "Official hands-on API certification covering REST APIs, test scripts, collections, and automated monitoring.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Postman",
+      "API Testing",
+      "REST",
+      "Student Badge"
+    ],
+    "featured": false,
+    "icon": "send",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Official verifiable Postman Student Expert badge",
+      "Hands-on training in REST API requests and auth",
+      "Automated testing and assertions in JavaScript",
+      "Postman Student Leader program pathway"
+    ],
+    "studentPerk": "Official badge & invite to Postman student Discord community"
+  },
+  {
+    "id": "kaggle-learn",
+    "name": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn",
+    "description": "Hands-on micro-courses and certificates for Python, Pandas, Machine Learning, Deep Learning, SQL, and Data Visualization.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Data Science",
+      "Machine Learning",
+      "Pandas",
+      "Python",
+      "Kaggle"
+    ],
+    "featured": false,
+    "icon": "cpu",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Short practical micro-courses (3-4 hours each)",
+      "Interactive Jupyter notebooks with instant grading",
+      "Free certificates upon course completion",
+      "Free access to GPU and TPU notebooks"
+    ]
+  },
+  {
+    "id": "linux-foundation-edx",
+    "name": "Linux Foundation (edX)",
+    "url": "https://www.edx.org/school/linuxfoundationx",
+    "description": "Free audit courses covering Linux fundamentals, Git revision control, open source software development, and Kubernetes.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Linux",
+      "Kubernetes",
+      "Open Source",
+      "SysAdmin"
+    ],
+    "featured": false,
+    "icon": "terminal",
+    "previewImage": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Intro to Linux (LFS101x) official course",
+      "Intro to Kubernetes (LFS158x) official course",
+      "Created directly by the Linux Foundation",
+      "Audit access 100% free"
+    ]
+  },
+  {
+    "id": "google-fonts",
+    "name": "Google Fonts",
+    "url": "https://fonts.google.com/",
+    "description": "Massive library of 1,600+ open-source fonts, variable typography, and material icons with free CDN embedding.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Fonts",
+      "Typography",
+      "Open Source",
+      "CDN"
+    ],
+    "featured": true,
+    "icon": "type",
+    "previewImage": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1,600+ free open-source font families",
+      "Variable font weight and optical size sliders",
+      "Material Symbols icon set included",
+      "Instant CSS @import and <link> snippets"
+    ]
+  },
+  {
+    "id": "fontshare",
+    "name": "Fontshare (ITF)",
+    "url": "https://www.fontshare.com/",
+    "description": "Free font service by Indian Type Foundry providing professional-grade typography (Clash Display, Satoshi, Cabinet Grotesk).",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Fonts",
+      "Editorial",
+      "Clash Display",
+      "Commercial Use"
+    ],
+    "featured": true,
+    "icon": "type",
+    "previewImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100% free for commercial & personal projects",
+      "Home of Satoshi, Clash Display, and General Sans",
+      "Variable fonts with custom glyph sets",
+      "Instant CDN hosting or TTF/WOFF2 downloads"
+    ]
+  },
+  {
+    "id": "svgl",
+    "name": "SVGL",
+    "url": "https://svgl.app/",
+    "description": "A curated, searchable library of vector SVG logos for modern frameworks, developer tools, libraries, and languages.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "SVG Logos",
+      "Dev Icons",
+      "Vector",
+      "Logos"
+    ],
+    "featured": true,
+    "icon": "svg",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Clean vector logos with dark/light theme variants",
+      "Direct copy as React component or raw SVG",
+      "SVGL API for automated logo fetching",
+      "Curated modern tech ecosystem entries"
+    ]
+  },
+  {
+    "id": "lucide-icons",
+    "name": "Lucide Icons",
+    "url": "https://lucide.dev/",
+    "description": "Crisp, modular, open-source icon library with 1,000+ icons and official packages for React, Vue, Svelte, and Angular.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Icons",
+      "React Icons",
+      "Feather Fork",
+      "Vector"
+    ],
+    "featured": true,
+    "icon": "icons",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1,400+ consistent 24x24 grid outline icons",
+      "Tree-shakeable React, Vue, Svelte, and Angular packages",
+      "Configurable stroke width, color, and size",
+      "Default icon set for Tailwind and Shadcn UI"
+    ]
+  },
+  {
+    "id": "uncut-wtf",
+    "name": "Uncut.wtf",
+    "url": "https://uncut.wtf/",
+    "description": "A contemporary open-source typography catalogue focusing on modern, brutalist, and experimental typefaces.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Brutalist Fonts",
+      "Experimental",
+      "Contemporary",
+      "Free"
+    ],
+    "featured": false,
+    "icon": "font",
+    "previewImage": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Curated brutalist, serif, and display fonts",
+      "Filter by open-source license type",
+      "Live in-browser font testing tester",
+      "Direct links to creator repositories"
+    ]
+  },
+  {
+    "id": "vectorlogozone",
+    "name": "VectorLogoZone",
+    "url": "https://www.vectorlogo.zone/",
+    "description": "Consistently formatted SVG logos with transparent backgrounds for tech stacks, cloud providers, and developer products.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "SVG Logos",
+      "Tech Logos",
+      "Transparent",
+      "CDN"
+    ],
+    "featured": false,
+    "icon": "vector",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "3,000+ tech logos normalized to uniform square bounds",
+      "Hotlinkable CDN URLs for markdown files and READMEs",
+      "Light and dark mode variants",
+      "Clean SVG code without bloated editor metadata"
+    ]
+  },
+  {
+    "id": "simple-icons",
+    "name": "Simple Icons",
+    "url": "https://simpleicons.org/",
+    "description": "Over 3,000 free SVG icons for popular brands, software tools, programming languages, and operating systems.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Brand Icons",
+      "Badges",
+      "SVG",
+      "npm package"
+    ],
+    "featured": false,
+    "icon": "feather",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Official hex brand colors included for every icon",
+      "Used worldwide on GitHub README shields",
+      "Available via npm: simple-icons",
+      "Maintained by active open-source contributors"
+    ]
+  },
+  {
+    "id": "unsplash",
+    "name": "Unsplash",
+    "url": "https://unsplash.com/",
+    "description": "Vast library of high-resolution royalty-free photos contributed by photographers worldwide for web mockups and headers.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Stock Photos",
+      "Royalty-Free",
+      "High-Res",
+      "Unsplash API"
+    ],
+    "featured": false,
+    "icon": "camera",
+    "previewImage": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "5+ million high-resolution curated photos",
+      "Free for commercial and personal web use",
+      "Dynamic URL params for width, crop, and webp format",
+      "Robust REST API for automated image fetching"
+    ]
+  },
+  {
+    "id": "lottiefiles",
+    "name": "LottieFiles",
+    "url": "https://lottiefiles.com/",
+    "description": "Lightweight, scalable vector animations in JSON format with ready-to-use player libraries for web and mobile apps.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Freemium",
+    "tags": [
+      "Animations",
+      "Lottie JSON",
+      "Micro-interactions",
+      "Vector"
+    ],
+    "featured": false,
+    "icon": "play",
+    "previewImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "10x smaller file size than GIFs with lossless vector scaling",
+      "Web player component for React, HTML, and Vue",
+      "In-browser color editor and speed controls",
+      "Figma and After Effects export plugins"
+    ]
+  },
+  {
+    "id": "tabler-icons",
+    "name": "Tabler Icons",
+    "url": "https://tabler.io/icons",
+    "description": "Over 5,200 customizable open-source SVG icons with adjustable stroke widths and direct SVG/React exports.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Icons",
+      "SVG",
+      "Customizable Stroke",
+      "Tabler"
+    ],
+    "featured": false,
+    "icon": "grid",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "5,200+ icons with uniform pixel grid",
+      "Interactive stroke width, size, and color picker",
+      "Packages for React, Vue, Svelte, and Flutter",
+      "100% free under MIT License"
+    ]
+  },
+  {
+    "id": "github-student-pack",
+    "name": "GitHub Student Developer Pack",
+    "url": "https://education.github.com/pack",
+    "description": "The ultimate student developer bundle providing over  in free cloud credits, domain names, GitHub Copilot, and software tools.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "GitHub",
+      "Free Software",
+      "Domains",
+      "Cloud Credits"
+    ],
+    "featured": true,
+    "icon": "gift",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Free GitHub Copilot Pro while enrolled",
+      "Free 1-year Namecheap .me domain & SSL",
+      " -  in DigitalOcean & Azure credits",
+      "Free access to Termius, Datadog, Frontend Masters"
+    ],
+    "studentPerk": "+ in free developer tooling with valid school email"
+  },
+  {
+    "id": "jetbrains-student",
+    "name": "JetBrains Student License",
+    "url": "https://www.jetbrains.com/community/education/#students",
+    "description": "Complimentary all-products educational license to all JetBrains IDEs including IntelliJ Ultimate, PyCharm Pro, and WebStorm.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "JetBrains",
+      "IntelliJ Ultimate",
+      "WebStorm",
+      "PyCharm Pro"
+    ],
+    "featured": true,
+    "icon": "jetbrains",
+    "previewImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Access to IntelliJ IDEA Ultimate, WebStorm, PyCharm Pro",
+      "CLion, Rider, DataGrip, GoLand included",
+      "Renewable every year as long as you are a student",
+      "Commercial features enabled for academic projects"
+    ],
+    "studentPerk": "100% free annual subscription (valued at /yr)"
+  },
+  {
+    "id": "aws-educate",
+    "name": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "description": "No-credit-card required cloud learning sandbox and credits for students exploring AWS cloud architecture.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Free",
+    "tags": [
+      "AWS",
+      "No Credit Card",
+      "Cloud Sandbox",
+      "Students"
+    ],
+    "featured": false,
+    "icon": "aws",
+    "previewImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "No credit card needed to register",
+      "Access to AWS Cloud Sandbox labs",
+      "Student digital credentials and badges",
+      "Job board connecting students to cloud employers"
+    ],
+    "studentPerk": "Hands-on cloud access without risk of accidental charges"
+  },
+  {
+    "id": "oracle-free-tier",
+    "name": "Oracle Cloud Always Free Tier",
+    "url": "https://www.oracle.com/cloud/free/",
+    "description": "Generous Always-Free cloud tier featuring up to 4 ARM Ampere compute cores, 24 GB RAM, and 200 GB block storage for personal servers.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Free",
+    "tags": [
+      "Free VPS",
+      "24GB RAM",
+      "Always Free",
+      "Hosting"
+    ],
+    "featured": true,
+    "icon": "server",
+    "previewImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Up to 4 OCPUs (ARM) and 24 GB RAM forever free",
+      "2 AMD-based Compute VMs included",
+      "200 GB NVMe block storage",
+      "Ideal for hosting Discord bots, personal APIs, and databases"
+    ],
+    "studentPerk": "Best free tier VPS in the entire cloud industry"
+  },
+  {
+    "id": "cloudflare-workers",
+    "name": "Cloudflare Workers & Pages",
+    "url": "https://workers.cloudflare.com/",
+    "description": "Generous free tier offering serverless edge functions, KV storage, and fast global static web hosting with custom domains.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Free",
+    "tags": [
+      "Cloudflare",
+      "Edge Compute",
+      "Pages",
+      "Serverless",
+      "Free Hosting"
+    ],
+    "featured": false,
+    "icon": "cloudflare",
+    "previewImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100,000 free edge function requests per day",
+      "Unlimited bandwidth static site hosting on Cloudflare Pages",
+      "Free automatic SSL and custom domain routing",
+      "Integrated Cloudflare D1 (SQL) and KV databases"
+    ]
+  },
+  {
+    "id": "gizmo-ai",
+    "name": "Gizmo AI",
+    "url": "https://gizmo.ai/",
+    "description": "Gamified AI study platform that automatically converts lecture notes, PDFs, flashcards, and videos into interactive quizzes and active recall learning decks.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "AI Study",
+      "Flashcards",
+      "Active Recall",
+      "Spaced Repetition",
+      "Gamified Learning"
+    ],
+    "featured": true,
+    "icon": "zap",
+    "previewImage": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant AI quiz & flashcard generation from notes and PDFs",
+      "Scientifically proven spaced repetition and active recall algorithms",
+      "Gamified streaks, avatar rewards, and friendly study battles",
+      "Exportable decks and collaborative study groups"
+    ],
+    "studentPerk": "Generous free tier for students with unlimited study deck generation"
+  },
+  {
+    "id": "reactive-resume",
+    "name": "Reactive Resume",
+    "url": "https://rxresu.me/",
+    "description": "A free and open-source resume builder designed to make creating, updating, and sharing professional developer and academic resumes simple, privacy-friendly, and paywall-free.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Open Source",
+    "tags": [
+      "Resume Builder",
+      "Open Source",
+      "Career",
+      "LaTeX",
+      "PDF Export",
+      "Portfolio"
+    ],
+    "featured": true,
+    "icon": "file-text",
+    "previewImage": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100% free forever with no paywalls, subscriptions, or watermarks",
+      "Live real-time customizer with multiple modern ATS-friendly templates",
+      "High-res vector PDF export and shareable public links",
+      "Privacy-first with local storage and self-hosting options"
+    ],
+    "studentPerk": "100% free and open source for CS students, new grads, and job seekers"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "url": "https://www.grammarly.com/",
+    "description": "AI writing assistant that provides real-time grammar checks, style adjustments, tone refinement, and context-aware generative rewrites across desktop apps, IDEs, and browsers.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Writing Assistant",
+      "Grammar",
+      "Tone Checker",
+      "Productivity",
+      "AI Editor"
+    ],
+    "featured": false,
+    "icon": "pen-tool",
+    "previewImage": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time spelling, punctuation, and grammatical correction",
+      "Generative AI text rephrasing, summarization, and tone shifting",
+      "Extensions for Chrome, VS Code, Google Docs, and desktop apps",
+      "Plagiarism checking and automatic citation formatting"
+    ],
+    "studentPerk": "Free core tier for writing correction; educational student group discounts"
+  },
+  {
+    "id": "flaticon",
+    "name": "Flaticon",
+    "url": "https://www.flaticon.com/",
+    "description": "The largest database of customizable free vector icons, UI stickers, interface glyphs, and animated web assets available in SVG, PNG, EPS, and BASE64 formats.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Freemium",
+    "tags": [
+      "Vector Icons",
+      "SVG",
+      "UI Assets",
+      "Stickers",
+      "Web Icons",
+      "Design"
+    ],
+    "featured": false,
+    "icon": "image",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Over 16 million free vector icons and animated stickers",
+      "In-browser SVG editor to adjust colors, stroke widths, and sizes",
+      "Figma and Google Workspace official plugin integrations",
+      "Custom icon web font generator for web developers"
+    ]
+  },
+  {
+    "id": "bootstrap",
+    "name": "Bootstrap",
+    "url": "https://getbootstrap.com/",
+    "description": "The world's most popular open-source frontend toolkit for building responsive, mobile-first websites with CSS variables, flexbox grid, and prebuilt components.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "CSS Framework",
+      "Responsive Grid",
+      "UI Components",
+      "Frontend",
+      "Open Source"
+    ],
+    "featured": false,
+    "icon": "layout",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Robust 12-column mobile-first flexbox & CSS grid system",
+      "Extensive library of accessible, customizable UI components",
+      "Deep CSS custom property variables and Sass modular architecture",
+      "Official Bootstrap Icons collection with 2,000+ vector icons"
+    ]
+  },
+  {
+    "id": "leetcode",
+    "name": "LeetCode & LeetCode 75",
+    "url": "https://leetcode.com/studyplan/leetcode-75/",
+    "description": "The premier coding practice and technical interview preparation platform featuring 3,000+ algorithmic challenges and the curated LeetCode 75 study roadmap.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Freemium",
+    "tags": [
+      "Coding Practice",
+      "LeetCode 75",
+      "Algorithms",
+      "Data Structures",
+      "Interview Prep"
+    ],
+    "featured": true,
+    "icon": "code-2",
+    "previewImage": "https://images.unsplash.com/photo-1516116211227-bbc17c385c78?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Curated LeetCode 75 & Blind 75 foundational interview roadmaps",
+      "In-browser multi-language compiler (Python, C++, Java, JS, Rust, Go)",
+      "Runtime performance profiling and space complexity benchmarks",
+      "Weekly global coding contests and mock technical interviews"
+    ],
+    "studentPerk": "Annual LeetCode Student Discount program for university students"
+  },
+  {
+    "id": "github-platform",
+    "name": "GitHub Platform",
+    "url": "https://github.com/",
+    "description": "The world's leading developer platform for version control, collaborative code review, CI/CD automation with GitHub Actions, Codespaces, and open-source software hosting.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Git",
+      "Version Control",
+      "Open Source",
+      "CI/CD",
+      "Codespaces",
+      "Collaboration"
+    ],
+    "featured": true,
+    "icon": "github",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Unlimited public and private Git repositories with pull requests",
+      "GitHub Actions CI/CD with 2,000 free automated build minutes/mo",
+      "Cloud development environments with GitHub Codespaces",
+      "Comprehensive issue tracking, project boards, and Discussions"
+    ],
+    "studentPerk": "GitHub Student Developer Pack including GitHub Pro, Copilot, free domains, and $200k+ in partner perks"
+  },
+  {
+    "id": "coolors",
+    "name": "Coolors",
+    "url": "https://coolors.co/",
+    "description": "Super-fast color scheme and palette generator for UI/UX designers and developers with WCAG contrast validation, gradient maker, and CSS/SVG/JSON code export.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Freemium",
+    "tags": [
+      "Color Palette",
+      "Colors",
+      "Accessibility",
+      "Contrast Checker",
+      "Design Tool"
+    ],
+    "featured": false,
+    "icon": "palette",
+    "previewImage": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant 5-color harmonious palette generation with spacebar press",
+      "WCAG 2.1 color contrast analyzer for accessible web design",
+      "Extract harmonious palettes directly from uploaded photos",
+      "Export to CSS variables, Tailwind config, SVG, PDF, and Figma"
+    ]
+  },
+  {
+    "id": "laws-of-ux",
+    "name": "Laws of UX",
+    "url": "https://lawsofux.com/",
+    "description": "A curated collection of cognitive heuristics, psychological principles, and behavioral laws that designers and engineers leverage to build intuitive, human-centered user interfaces.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "UX Design",
+      "Psychology",
+      "Heuristics",
+      "UI/UX",
+      "Best Practices",
+      "Design Principles"
+    ],
+    "featured": true,
+    "icon": "book-open",
+    "previewImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Detailed breakdowns of Fitts's, Hick's, Miller's, and Jakob's laws",
+      "Practical UI/UX case studies and real-world interface examples",
+      "Downloadable design cards, posters, and reference guides",
+      "Available in 20+ languages for international learners"
+    ]
+  },
+  {
+    "id": "the-odin-project",
+    "name": "The Odin Project",
+    "url": "https://www.theodinproject.com/",
+    "description": "A free, community-driven, open-source full-stack web development curriculum that guides learners from zero to job-ready with hands-on projects in JavaScript, Node.js, and Ruby on Rails.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Open Source",
+    "tags": [
+      "Full Stack",
+      "Learn to Code",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Ruby on Rails"
+    ],
+    "featured": true,
+    "icon": "code",
+    "previewImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100% free and open-source full stack curriculum",
+      "Project-centric learning building real portfolio applications",
+      "Thorough coverage of Git, terminal CLI, Node, React, and databases",
+      "Active Discord community with 500,000+ developers and mentors"
+    ]
+  },
+  {
+    "id": "daily-dev",
+    "name": "daily.dev",
+    "url": "https://daily.dev/",
+    "description": "The premier developer homepage and personalized news aggregator curating top engineering blogs, open-source releases, and tech tutorials from 600+ vetted sources.",
+    "category": "ide",
+    "categoryName": "IDEs & Code Editors",
+    "pricing": "Free",
+    "tags": [
+      "Developer News",
+      "Tech Feed",
+      "Productivity",
+      "Community",
+      "Browser Extension"
+    ],
+    "featured": false,
+    "icon": "newspaper",
+    "previewImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Personalized daily engineering feed tailored to your tech stack",
+      "Zero-configuration new-tab browser extension and desktop app",
+      "Interactive developer squads and article commentary",
+      "Collaborative bookmarking and cross-device reading sync"
+    ]
+  },
+  {
+    "id": "pexels",
+    "name": "Pexels",
+    "url": "https://www.pexels.com/",
+    "description": "High-quality, royalty-free stock photography and 4K footage licensed for personal and commercial developer, design, and marketing projects with no attribution required.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Stock Photos",
+      "Stock Video",
+      "Royalty Free",
+      "CC0",
+      "Design Assets"
+    ],
+    "featured": false,
+    "icon": "camera",
+    "previewImage": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Millions of free high-resolution photos and 4K stock video clips",
+      "100% free for commercial use with no copyright attribution needed",
+      "Free REST API for programmatic image loading in web apps",
+      "Color, orientation, and resolution search filters"
+    ]
+  },
+  {
+    "id": "simplilearn-skillup",
+    "name": "Simplilearn SkillUp",
+    "url": "https://www.simplilearn.com/skillup-free-online-courses",
+    "description": "Free online courses and self-paced certification programs taught by industry leaders across Generative AI, Cloud Computing, Cybersecurity, DevOps, and Full-Stack Development.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Free Certificates",
+      "Cybersecurity",
+      "Cloud",
+      "AI & ML",
+      "DevOps",
+      "Courses"
+    ],
+    "featured": false,
+    "icon": "award",
+    "previewImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1,000+ hours of video learning across high-demand tech domains",
+      "Verifiable certificates of completion shareable directly to LinkedIn",
+      "Quizzes, project assessments, and downloadable learning cheat sheets",
+      "Self-paced flexible schedule tailored for students and professionals"
+    ]
+  },
+  {
+    "id": "animejs",
+    "name": "Anime.js",
+    "url": "https://animejs.com/",
+    "description": "A lightweight JavaScript animation engine with a clean API that powers complex CSS properties, SVG path drawing, morphing, and staggered micro-interactions.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Animation",
+      "JavaScript",
+      "SVG Animation",
+      "Micro-Interactions",
+      "Motion UI"
+    ],
+    "featured": false,
+    "icon": "sparkles",
+    "previewImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Lightweight with zero external dependencies",
+      "Advanced SVG path animations, line drawing, and shape morphing",
+      "Complex timeline controls, playback synchronization, and staggering",
+      "Support for CSS transform, DOM attributes, and JS Object properties"
+    ]
+  },
+  {
+    "id": "codedex",
+    "name": "Codédex",
+    "url": "https://www.codedex.io/",
+    "description": "A charming 16-bit RPG-style coding adventure that teaches Python, HTML, CSS, JavaScript, React, and Git through fantasy quests, coding challenges, and badges.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Freemium",
+    "tags": [
+      "Learn to Code",
+      "Gamified",
+      "Python",
+      "HTML/CSS",
+      "JavaScript",
+      "React"
+    ],
+    "featured": true,
+    "icon": "gamepad-2",
+    "previewImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "RPG adventure questline with interactive browser code editors",
+      "Earn XP, unlock custom 16-bit avatar gear, and collect badges",
+      "Active community with monthly student hackathons and workshops",
+      "Hands-on project milestones for building real web applications"
+    ],
+    "studentPerk": "Free educational student clubs and discounts on Codédex Club membership"
+  },
+  {
+    "id": "reddit-sideproject",
+    "name": "r/SideProject",
+    "url": "https://www.reddit.com/r/SideProject/",
+    "description": "A bustling Reddit community where developers, UI designers, and indie hackers showcase side projects, gather authentic user feedback, and exchange launch strategies.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Side Projects",
+      "Indie Hackers",
+      "Community",
+      "Product Launch",
+      "User Feedback"
+    ],
+    "featured": false,
+    "icon": "message-square",
+    "previewImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Live showcases of newly built indie apps, SaaS, and open-source tools",
+      "Honest feedback and technical critique from 150k+ fellow builders",
+      "Beta tester recruitment and early user validation",
+      "Discover emerging web development stacks and design trends"
+    ]
+  },
+  {
+    "id": "boxicons",
+    "name": "Boxicons",
+    "url": "https://boxicons.com/",
+    "description": "A carefully crafted open-source vector icon set of 1,500+ clean icons designed for frontend web applications, available as SVG, web components, fonts, and React components.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Open Source",
+    "tags": [
+      "Icons",
+      "Vector",
+      "Web Components",
+      "SVG",
+      "Frontend"
+    ],
+    "featured": false,
+    "icon": "box",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1,500+ regular, solid, and brand logo vector icons",
+      "Custom web component support via `<box-icon>` custom element",
+      "NPM package, web font CDN, and Figma component file",
+      "100% free and open source under CC 4.0 / SIL licenses"
+    ]
+  },
+  {
+    "id": "formspree",
+    "name": "Formspree",
+    "url": "https://formspree.io/",
+    "description": "Seamless form backend and submission pipeline for HTML forms, static sites (Astro, Next.js, Gatsby), and React apps with zero server configuration or backend code.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Form Backend",
+      "Static Sites",
+      "Serverless",
+      "JAMstack",
+      "Email Alerts"
+    ],
+    "featured": false,
+    "icon": "send",
+    "previewImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Direct integration with simple HTML `<form action='...'>` tags",
+      "Automated spam protection with reCAPTCHA and honeypot filters",
+      "Webhook notifications, email routing, and Zapier connectivity",
+      "React hooks and submission libraries with AJAX support"
+    ],
+    "studentPerk": "Free tier with 50 monthly submissions; educational discounts for student projects"
+  },
+  {
+    "id": "react-bits",
+    "name": "React Bits",
+    "url": "https://reactbits.dev/",
+    "description": "An open-source library of 80+ animated, interactive, and customizable React components and UI snippets built with Tailwind CSS and Framer Motion for rapid prototyping.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Open Source",
+    "tags": [
+      "React",
+      "Tailwind CSS",
+      "Animations",
+      "Framer Motion",
+      "UI Components"
+    ],
+    "featured": true,
+    "icon": "layers",
+    "previewImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "80+ creative React UI animations, docks, physics text, and cards",
+      "Zero-dependency copy-paste components for Tailwind + Motion",
+      "Smooth 60fps animations optimized for high performance",
+      "Interactive component playground with real-time code previews"
+    ]
+  },
+  {
+    "id": "codewars",
+    "name": "Codewars",
+    "url": "https://www.codewars.com/",
+    "description": "Achieve coding mastery through martial arts-style katas: solve algorithmic puzzles in 55+ programming languages, write automated test cases, and study peer solutions.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Coding Katas",
+      "Algorithms",
+      "Problem Solving",
+      "Multi-Language",
+      "Interview Prep"
+    ],
+    "featured": false,
+    "icon": "shield",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Rank progression system from 8 kyu (beginner) to 1 dan (expert)",
+      "Support for 55+ languages (Python, JS, TypeScript, Rust, Go, C++)",
+      "Write and run custom unit test suites directly in the browser",
+      "Compare and learn from the most creative community solutions"
+    ]
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "url": "https://supabase.com/",
+    "description": "The open-source Firebase alternative featuring a dedicated PostgreSQL database, instant auto-generated REST/GraphQL APIs, Authentication, Realtime subscriptions, and Edge Functions.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "PostgreSQL",
+      "Database",
+      "Auth",
+      "Backend as a Service",
+      "Realtime",
+      "Serverless"
+    ],
+    "featured": true,
+    "icon": "database",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Dedicated Postgres DB with Row Level Security (RLS) & pgvector AI embeddings",
+      "Built-in Authentication with OAuth, Magic Links, and Phone verification",
+      "Instant WebSocket realtime change listeners and Edge Functions",
+      "S3-compatible file storage with automatic image resizing"
+    ],
+    "studentPerk": "Generous free tier with 2 free active database projects and $10/mo credit discounts"
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face Hub & Models",
+    "url": "https://huggingface.co/",
+    "description": "The definitive platform for open-source AI models, datasets, and ML demos hosting hundreds of thousands of pre-trained models (Llama, DeepSeek, Mistral, Flux, Whisper).",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "AI Models",
+      "Open Source AI",
+      "Datasets",
+      "Spaces",
+      "Transformers",
+      "ML Platform"
+    ],
+    "featured": true,
+    "icon": "cpu",
+    "previewImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Repository for over 500,000 open-weight AI and LLM models",
+      "Hugging Face Spaces for hosting interactive Gradio & Streamlit demos",
+      "Transformers, Diffusers, and Datasets Python library integrations",
+      "Serverless Inference API with free tier for hobbyist experiments"
+    ],
+    "studentPerk": "Free hosting for public AI models, datasets, and Spaces demos"
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud Console & Free Tier",
+    "url": "https://cloud.google.com/free",
+    "description": "Enterprise cloud computing platform offering $300 in free trial credits and 20+ 'Always Free' products including Compute Engine VMs, BigQuery, and Cloud Functions.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Cloud Hosting",
+      "GCP",
+      "Virtual Machines",
+      "Serverless",
+      "Kubernetes",
+      "BigQuery"
+    ],
+    "featured": true,
+    "icon": "cloud",
+    "previewImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "1 free e2-micro VM instance per month in US regions",
+      "Generous free tiers for Cloud Run, Cloud Functions, and Cloud Storage",
+      "BigQuery 1 TB free SQL query analysis monthly",
+      "Access to Google Vertex AI and enterprise API tools"
+    ],
+    "studentPerk": "$300 free trial credits + Google Cloud Innovators student learning passes"
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify",
+    "url": "https://www.netlify.com/",
+    "description": "The premier web development platform for automated Git-driven deployments, serverless backend functions, deploy previews for pull requests, and global edge CDN.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Web Hosting",
+      "CI/CD",
+      "Serverless",
+      "JAMstack",
+      "Edge Functions",
+      "Git Deploy"
+    ],
+    "featured": true,
+    "icon": "globe",
+    "previewImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant continuous deployments from GitHub, GitLab, and Bitbucket",
+      "Collaborative Deploy Previews for reviewing pull requests",
+      "Serverless Edge Functions and built-in form processing",
+      "Automated SSL certificate provisioning and custom domain routing"
+    ],
+    "studentPerk": "Generous free tier with 100GB monthly bandwidth and 300 build minutes"
+  },
+  {
+    "id": "terraink",
+    "name": "Terraink",
+    "url": "https://terraink.com/",
+    "description": "A free custom cartography generator that turns any city or geographical coordinate into high-resolution map posters, dark-mode wallpapers, and vector geography artwork.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Map Creator",
+      "Wallpapers",
+      "Cartography",
+      "Vector Maps",
+      "Design Asset"
+    ],
+    "featured": false,
+    "icon": "map",
+    "previewImage": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Interactive map styling with dark, neon, vintage, and blueprint themes",
+      "High-resolution 4K wallpaper and printable PDF/PNG export",
+      "Custom typography labels, coordinates, and custom aspect ratios",
+      "100% browser-based with instant client-side rendering"
+    ]
+  },
+  {
+    "id": "cta-gallery",
+    "name": "CTA Gallery",
+    "url": "https://cta.gallery/",
+    "description": "A curated design gallery showcasing high-converting Call-to-Action (CTA) sections, button states, hero banners, and micro-copy patterns from the world's best SaaS products.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "CTA Design",
+      "Call to Action",
+      "Conversion UI",
+      "Landing Pages",
+      "Design Inspiration"
+    ],
+    "featured": false,
+    "icon": "mouse-pointer",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hundreds of verified SaaS call-to-action screenshots and patterns",
+      "Categorized by style, conversion objective, and industry vertical",
+      "Micro-interaction and gradient button inspiration",
+      "Direct links to live landing page implementations"
+    ]
+  },
+  {
+    "id": "kimi-ai",
+    "name": "Kimi AI (Moonshot)",
+    "url": "https://kimi.moonshot.cn/",
+    "description": "Moonshot AI's frontier conversational AI assistant featuring a breakthrough 2-million-token context window for analyzing full books, multi-file codebases, and massive research docs.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Free",
+    "tags": [
+      "2M Context",
+      "Long Context",
+      "Document AI",
+      "Moonshot AI",
+      "Research Assistant"
+    ],
+    "featured": true,
+    "icon": "bot",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Massive 2,000,000 token context window for book-length documents",
+      "Real-time web search and deep research summarization",
+      "Multi-document cross-comparison and accurate synthesis",
+      "High-speed coding generation and mathematical reasoning"
+    ]
+  },
+  {
+    "id": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "url": "https://copilot.microsoft.com/",
+    "description": "Microsoft's daily AI companion powered by GPT-4o with real-time Bing search grounding, DALL-E 3 image generation, and native integration with Windows and Edge.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "Microsoft",
+      "GPT-4o",
+      "Bing Search",
+      "Multimodal",
+      "AI Companion"
+    ],
+    "featured": false,
+    "icon": "sparkles",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Web-grounded answers with live citation sources and links",
+      "Built-in DALL-E 3 AI image generation at no cost",
+      "Voice conversation mode and visual document parsing",
+      "Seamless integration with Microsoft 365, Edge, and Windows 11"
+    ],
+    "studentPerk": "Free commercial data protection for students with school Microsoft accounts"
+  },
+  {
+    "id": "notebooklm",
+    "name": "Google NotebookLM",
+    "url": "https://notebooklm.google.com/",
+    "description": "Google's personalized AI research notebook grounded exclusively in your uploaded PDFs, Google Docs, and notes, featuring AI-generated conversational Audio Podcasts.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Free",
+    "tags": [
+      "Research Notebook",
+      "Audio Overview",
+      "Document Grounding",
+      "Gemini",
+      "Study Companion"
+    ],
+    "featured": true,
+    "icon": "book-open",
+    "previewImage": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Source-grounded answers with verifiable in-text citation links",
+      "Generates lifelike two-host conversational 'Audio Overviews' (podcasts)",
+      "Supports up to 50 sources including PDFs, web URLs, Docs, and text",
+      "Powered by Google's Gemini 1.5 Pro multimodal reasoning engine"
+    ],
+    "studentPerk": "100% free with a Google account for academic research and study"
+  },
+  {
+    "id": "grok",
+    "name": "xAI Grok",
+    "url": "https://grok.com/",
+    "description": "xAI's flagship conversational model with real-time X/Twitter data integration, deep web search capabilities, and Grok 3 reasoning for coding and technical problems.",
+    "category": "ai-chatbots",
+    "categoryName": "AI Chatbots & LLM Models",
+    "pricing": "Freemium",
+    "tags": [
+      "xAI",
+      "Grok-3",
+      "Real-time X",
+      "Reasoning",
+      "Deep Search"
+    ],
+    "featured": true,
+    "icon": "sparkles",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time integration with live posts and breaking news on X",
+      "DeepSearch mode for extensive multi-step research synthesis",
+      "Top-tier mathematical, reasoning, and programming performance",
+      "Image understanding and vision generation capabilities"
+    ]
+  },
+  {
+    "id": "stitch-ai",
+    "name": "Google Stitch (Stitch AI)",
+    "url": "https://stitch.withgoogle.com/",
+    "description": "Google's experimental AI-powered interface design environment that transforms natural language prompts into responsive UI layouts, components, and interactive prototypes.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Free",
+    "tags": [
+      "AI UI Design",
+      "Prototyping",
+      "Google AI",
+      "Generative UI",
+      "Design Assistant"
+    ],
+    "featured": false,
+    "icon": "layout",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Generates responsive UI layouts and component trees from prompts",
+      "Collaborative canvas with real-time AI styling adjustments",
+      "Clean code export for frontend frameworks (HTML, Tailwind, React)",
+      "Exploration of next-generation generative design workflows"
+    ]
+  },
+  {
+    "id": "luma-ai",
+    "name": "Luma AI (Dream Machine)",
+    "url": "https://lumalabs.ai/dream-machine",
+    "description": "Frontier generative video and 3D scene creation model that generates high-fidelity, physically consistent video clips and 3D assets from text prompts and images.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Freemium",
+    "tags": [
+      "Generative Video",
+      "3D NeRF",
+      "Dream Machine",
+      "AI Animation",
+      "Motion"
+    ],
+    "featured": false,
+    "icon": "video",
+    "previewImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "High-speed generation of realistic 120-frame video scenes at 24fps",
+      "Dynamic camera motion control (pan, zoom, crane, orbit)",
+      "Image-to-video keyframing and character continuity",
+      "Interactive 3D NeRF and Gaussian Splatting scene captures"
+    ]
+  },
+  {
+    "id": "manus-ai",
+    "name": "Manus AI",
+    "url": "https://manus.im/",
+    "description": "A general-purpose autonomous AI agent capable of navigating browsers, writing code, analyzing documents, and completing complex multi-step digital workflows end-to-end.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "Autonomous Agent",
+      "General Agent",
+      "Browser Automation",
+      "Task Execution",
+      "AI"
+    ],
+    "featured": true,
+    "icon": "bot",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Virtual browser navigation and asynchronous task execution",
+      "Multi-step problem decomposition and self-correcting workflows",
+      "Generates complete downloadable deliverables (spreadsheets, apps, decks)",
+      "Sandboxed cloud environment with live user inspection"
+    ]
+  },
+  {
+    "id": "scispace",
+    "name": "SciSpace",
+    "url": "https://scispace.com/",
+    "description": "An AI research assistant for students and academics that searches 280M+ scientific papers, explains complex math and methodologies in plain language, and generates literature reviews.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Academic Research",
+      "Literature Review",
+      "Paper Summarizer",
+      "Citation Generator",
+      "Study Companion"
+    ],
+    "featured": true,
+    "icon": "file-search",
+    "previewImage": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Ask questions directly to any PDF research paper with cited answers",
+      "Automated literature reviews synthesizing insights across multiple papers",
+      "Copilot Chrome extension for reading papers on Nature, arXiv, IEEE",
+      "Instant citation extraction and reference management"
+    ],
+    "studentPerk": "Free tier for students and researchers with 5 PDF uploads per day and basic search"
+  },
+  {
+    "id": "google-ai-studio",
+    "name": "Google AI Studio",
+    "url": "https://aistudio.google.com/",
+    "description": "The fastest web-based prototyping environment to experiment with Google's Gemini 2.0 Flash and Pro models, offering generous free API keys, system prompts, and code export.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Free",
+    "tags": [
+      "Gemini API",
+      "AI Prototyping",
+      "Developer Sandbox",
+      "Multimodal",
+      "Free Quota"
+    ],
+    "featured": true,
+    "icon": "cpu",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Immediate free API keys for Gemini 2.0 Flash, 2.0 Pro, and Thinking models",
+      "Million-token context sandbox with audio, video, and PDF uploads",
+      "Structured JSON output mode and system prompt tuning",
+      "One-click code generation for Python, JavaScript, cURL, and Swift"
+    ],
+    "studentPerk": "Generous free rate limits (up to 15 RPM / 1M TPM) for developer experimentation"
+  },
+  {
+    "id": "gamma-app",
+    "name": "Gamma",
+    "url": "https://gamma.app/",
+    "description": "An AI-powered presentation, document, and webpage generator that transforms simple text outlines or prompts into beautifully formatted, interactive slide decks in seconds.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Freemium",
+    "tags": [
+      "AI Presentations",
+      "Slide Decks",
+      "Webpages",
+      "Documents",
+      "Storytelling"
+    ],
+    "featured": true,
+    "icon": "layout-template",
+    "previewImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Generates complete presentations with custom themes and typography",
+      "Interactive embeds (forms, Figma prototypes, videos, live charts)",
+      "One-click aesthetic restyling and automated layout polish",
+      "Export to PDF, PowerPoint (.pptx), or share via interactive web link"
+    ],
+    "studentPerk": "Generous free tier with 400 initial AI credits and referral bonuses"
+  },
+  {
+    "id": "deepseek-platform",
+    "name": "DeepSeek API Platform",
+    "url": "https://platform.deepseek.com/",
+    "description": "The official developer API platform for DeepSeek-V3 and DeepSeek-R1 reasoning models, featuring industry-leading low latency, OpenAI-compatible APIs, and extreme affordability.",
+    "category": "ai-agents",
+    "categoryName": "AI Agents & Code Assistants",
+    "pricing": "Freemium",
+    "tags": [
+      "DeepSeek-V3",
+      "DeepSeek-R1",
+      "LLM API",
+      "Developer Platform",
+      "Cost-Effective"
+    ],
+    "featured": true,
+    "icon": "server",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Drop-in OpenAI SDK compatibility (baseURL switch)",
+      "DeepSeek-R1 reasoning tokens with step-by-step chain-of-thought",
+      "Context caching with up to 90% discount on cache hits",
+      "Free initial API credit grants for newly registered developers"
+    ]
+  },
+  {
+    "id": "cosmos",
+    "name": "Cosmos",
+    "url": "https://www.cosmos.so/",
+    "description": "A minimalist, ad-free visual curation app and moodboarding tool designed for artists, designers, and creative thinkers to collect and discover inspiring visuals.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Visual Curation",
+      "Moodboard",
+      "Creative Archive",
+      "Inspiration",
+      "Design"
+    ],
+    "featured": false,
+    "icon": "grid",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Distraction-free, aesthetic infinite canvas and spatial layout",
+      "Browser extension for 1-click image and web clipping",
+      "Collaborative shared moodboards and private spaces",
+      "Zero algorithmic ads, clutter, or engagement traps"
+    ]
+  },
+  {
+    "id": "fontsinuse",
+    "name": "Fonts In Use",
+    "url": "https://fontsinuse.com/",
+    "description": "An indexed public archive of typography and graphic design documenting typeface usage across posters, book covers, brand identities, software, and UI design.",
+    "category": "typography-assets",
+    "categoryName": "Fonts, Logos & Design Assets",
+    "pricing": "Free",
+    "tags": [
+      "Typography",
+      "Typefaces",
+      "Graphic Design",
+      "Font Archive",
+      "Inspiration"
+    ],
+    "featured": false,
+    "icon": "type",
+    "previewImage": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Over 25,000 real-world design case studies and font identifications",
+      "Filter by typeface, classification, industry, format, and era",
+      "Direct links to font foundries and designer credits",
+      "Contributions curated by veteran typography scholars"
+    ]
+  },
+  {
+    "id": "pinterest",
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/",
+    "description": "The visual discovery engine for finding UI design concepts, typography combinations, color palettes, wireframes, and creative moodboards for web and mobile apps.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Moodboards",
+      "UI/UX Inspiration",
+      "Design Systems",
+      "Visual Search",
+      "Assets"
+    ],
+    "featured": false,
+    "icon": "pin",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Curate thematic boards for UI design, icon sets, and branding",
+      "Visual search tool to find similar design patterns and textures",
+      "Secret collaborative boards for design teams",
+      "Rich pins with direct website links and source attribution"
+    ]
+  },
+  {
+    "id": "pafolios",
+    "name": "Pafolios",
+    "url": "https://pafolios.com/",
+    "description": "A handpicked gallery of the best product design and UI/UX portfolios from designers at Apple, Google, Stripe, Airbnb, and world-class design studios.",
+    "category": "design-inspiration",
+    "categoryName": "Design Inspiration & UI Tools",
+    "pricing": "Free",
+    "tags": [
+      "Portfolios",
+      "Design Portfolios",
+      "Case Studies",
+      "UI/UX",
+      "Career Inspiration"
+    ],
+    "featured": true,
+    "icon": "briefcase",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hundreds of real designer portfolio breakdowns and case studies",
+      "Filter by company, design discipline, and interaction style",
+      "High-res screenshots and live portfolio URLs",
+      "Inspiration for student portfolios and junior designer resumes"
+    ]
+  },
+  {
+    "id": "cisco-data-analytics-essentials",
+    "name": "Cisco NetAcad: Data Analytics Essentials",
+    "url": "https://www.netacad.com/courses/data-analytics-essentials",
+    "description": "Official foundational course by Cisco Networking Academy teaching data gathering, database storage, SQL querying, data cleaning, and data visualization.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Data Analytics",
+      "SQL",
+      "Databases",
+      "Cisco NetAcad",
+      "Free Certificate",
+      "Excel"
+    ],
+    "featured": true,
+    "icon": "database",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hands-on SQL querying and relational database design",
+      "Data modeling, transformation, and visualization labs",
+      "Official verifiable Cisco Digital Badge & Certificate",
+      "100% free and self-paced online curriculum"
+    ]
+  },
+  {
+    "id": "cisco-intro-cybersecurity",
+    "name": "Cisco NetAcad: Introduction to Cybersecurity",
+    "url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+    "description": "Introductory cybersecurity course exploring global cyber threats, defensive fundamentals, network vulnerabilities, and privacy protection protocols.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Cybersecurity",
+      "Network Defense",
+      "Cisco NetAcad",
+      "Threats",
+      "Free Certificate"
+    ],
+    "featured": true,
+    "icon": "shield",
+    "previewImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Understanding modern malware, phishing, and attack vectors",
+      "Foundational principles of information confidentiality & integrity",
+      "Official Cisco Networking Academy verifiable badge",
+      "Introductory springboard for security operations careers"
+    ]
+  },
+  {
+    "id": "cisco-jr-cybersecurity-analyst",
+    "name": "Cisco NetAcad: Junior Cybersecurity Analyst Pathway",
+    "url": "https://www.netacad.com/career-paths/cybersecurity",
+    "description": "Comprehensive Cisco career pathway covering network security, threat monitoring, endpoint defense, and preparation for entry-level Security Operations Center (SOC) roles.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Cybersecurity Career",
+      "SOC Analyst",
+      "Cisco NetAcad",
+      "Network Defense",
+      "Endpoint Security"
+    ],
+    "featured": true,
+    "icon": "shield-alert",
+    "previewImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Multi-course structured career pathway for junior analysts",
+      "Packet Tracer simulations and security incident forensics",
+      "Aligned with industry-recognized Cisco Certified Support Technician (CCST) exams",
+      "Interactive labs and verifiable digital badges"
+    ]
+  },
+  {
+    "id": "cisco-html-essentials",
+    "name": "Cisco NetAcad: HTML Essentials",
+    "url": "https://www.netacad.com/courses/html-essentials?courseLang=en-US",
+    "description": "Free interactive course by Cisco teaching modern HTML5 markup, semantic document structure, hyperlinks, tables, forms, and accessibility standards.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "HTML5",
+      "Web Development",
+      "Frontend",
+      "Cisco NetAcad",
+      "Semantic Web"
+    ],
+    "featured": false,
+    "icon": "file-code",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Semantic HTML5 document hierarchy and structure",
+      "Forms, multimedia embeds, and table architectures",
+      "Web accessibility (a11y) fundamentals",
+      "Verifiable digital credential upon course completion"
+    ]
+  },
+  {
+    "id": "cisco-css-essentials",
+    "name": "Cisco NetAcad: CSS Essentials",
+    "url": "https://www.netacad.com/courses/css-essentials?courseLang=en-US",
+    "description": "Learn CSS styling, selectors, typography, colors, the box model, CSS flexbox, grid layouts, and responsive design through interactive Cisco labs.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "CSS3",
+      "Web Styling",
+      "Flexbox",
+      "Grid",
+      "Responsive Design",
+      "Cisco NetAcad"
+    ],
+    "featured": false,
+    "icon": "palette",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Modern CSS layout techniques with Flexbox & CSS Grid",
+      "Responsive mobile-first media queries and breakpoints",
+      "Transitions, animations, and pseudo-class selectors",
+      "Official Cisco completion badge for your resume"
+    ]
+  },
+  {
+    "id": "cisco-javascript-essentials-1",
+    "name": "Cisco NetAcad: JavaScript Essentials 1 (JSE)",
+    "url": "https://www.netacad.com/courses/javascript-essentials-1?courseLang=en-US",
+    "description": "Comprehensive beginner JavaScript course covering syntax, variables, data types, control flow, functions, arrays, and algorithmic problem solving.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "JavaScript",
+      "JS Fundamentals",
+      "Programming",
+      "Cisco NetAcad",
+      "OpenEDG"
+    ],
+    "featured": true,
+    "icon": "code",
+    "previewImage": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Co-developed with the OpenEDG JS Institute",
+      "Covers JSE – Certified Entry-Level JavaScript Programmer exam objectives",
+      "Interactive in-browser coding sandbox and quizzes",
+      "Free verifiable digital certificate of completion"
+    ]
+  },
+  {
+    "id": "cisco-javascript-essentials-2",
+    "name": "Cisco NetAcad: JavaScript Essentials 2 (JSA)",
+    "url": "https://www.netacad.com/courses/javascript-essentials-2?courseLang=en-US",
+    "description": "Advanced JavaScript curriculum diving into Object-Oriented Programming (OOP), prototypes, asynchronous programming, Promises, async/await, and DOM manipulation.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "JavaScript",
+      "OOP",
+      "Async JS",
+      "DOM Manipulation",
+      "Cisco NetAcad",
+      "OpenEDG"
+    ],
+    "featured": false,
+    "icon": "code",
+    "previewImage": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Deep dive into OOP, inheritance, and class structures",
+      "Asynchronous JavaScript (fetch, Promises, async/await)",
+      "Prepares for JSA – Certified Associate JavaScript Programmer",
+      "Hands-on projects and interactive browser assessments"
+    ]
+  },
+  {
+    "id": "cisco-python-essentials-1",
+    "name": "Cisco Skills for All: Python Essentials 1",
+    "url": "https://skillsforall.com/course/python-essentials-1",
+    "description": "Free official Python course co-developed with the Python Institute, preparing learners for the PCEP (Certified Entry-Level Python Programmer) credential.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Python",
+      "PCEP Certification",
+      "Python Institute",
+      "Programming Basics",
+      "Cisco"
+    ],
+    "featured": true,
+    "icon": "code-2",
+    "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Foundational Python syntax, logic, functions, and loops",
+      "Aligned with official PCEP certification objectives",
+      "Interactive sandbox labs with automated grading",
+      "Verifiable digital badge from Cisco & Python Institute"
+    ]
+  },
+  {
+    "id": "fcc-machine-learning-python",
+    "name": "freeCodeCamp: Machine Learning with Python",
+    "url": "https://www.freecodecamp.org/learn/machine-learning-with-python/",
+    "description": "Comprehensive 300-hour certification curriculum teaching TensorFlow, neural networks, computer vision, natural language processing, and reinforcement learning.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Open Source",
+    "tags": [
+      "Machine Learning",
+      "TensorFlow",
+      "Neural Networks",
+      "Python",
+      "freeCodeCamp",
+      "300hr Cert"
+    ],
+    "featured": true,
+    "icon": "cpu",
+    "previewImage": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Build 5 verified machine learning capstone projects",
+      "Deep neural networks, CNNs, RNNs, and classification models",
+      "100% free verifiable accreditation on freeCodeCamp",
+      "Hands-on Google Colab notebooks and test suites"
+    ]
+  },
+  {
+    "id": "fcc-relational-database",
+    "name": "freeCodeCamp: Relational Database Certification",
+    "url": "https://www.freecodecamp.org/learn/relational-database/",
+    "description": "300-hour hands-on certification using interactive VS Code containers to master Linux Bash scripting, Git version control, SQL, and PostgreSQL databases.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Open Source",
+    "tags": [
+      "SQL",
+      "PostgreSQL",
+      "Bash",
+      "Linux Terminal",
+      "freeCodeCamp",
+      "300hr Cert"
+    ],
+    "featured": true,
+    "icon": "database",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Interactive coding in real VS Code / Docker cloud containers",
+      "Master Bash scripting, nano, and terminal automation",
+      "Build 5 verified PostgreSQL database projects from scratch",
+      "Free verifiable industry-recognized certification badge"
+    ]
+  },
+  {
+    "id": "fcc-front-end-libraries",
+    "name": "freeCodeCamp: Front End Development Libraries",
+    "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+    "description": "300-hour interactive curriculum mastering modern frontend libraries including Bootstrap, Sass, jQuery, React, and Redux by building verified web applications.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Open Source",
+    "tags": [
+      "React",
+      "Bootstrap",
+      "Redux",
+      "Sass",
+      "jQuery",
+      "freeCodeCamp",
+      "300hr Cert"
+    ],
+    "featured": true,
+    "icon": "layers",
+    "previewImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Build 5 complex React applications (Calculator, Markdown Previewer, Drum Machine, Pomodoro Clock)",
+      "Deep understanding of React state, hooks, and Redux stores",
+      "Integration of Bootstrap and Sass styling ecosystems",
+      "100% free portfolio certification upon project reviews"
+    ]
+  },
+  {
+    "id": "great-learning-react-native",
+    "name": "Great Learning: React Native App Development",
+    "url": "https://www.mygreatlearning.com/react-native/free-courses",
+    "description": "Free introductory video course on cross-platform mobile app development with React Native, building iOS and Android applications with native UI components.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "React Native",
+      "Mobile Dev",
+      "iOS",
+      "Android",
+      "Cross-Platform",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "smartphone",
+    "previewImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Cross-platform mobile architecture and React Native CLI",
+      "Core mobile components, navigation, and state management",
+      "Free completion certificate shareable on LinkedIn",
+      "Self-paced video modules with practical code examples"
+    ]
+  },
+  {
+    "id": "great-learning-mysql-basics",
+    "name": "Great Learning: MySQL Basics",
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/mysql-basics",
+    "description": "Free self-paced tutorial covering MySQL database fundamentals: table schema creation, CRUD operations, aggregation functions, joins, and indexing.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "MySQL",
+      "SQL Queries",
+      "Database Management",
+      "RDBMS",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "database",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Core SQL syntax (SELECT, INSERT, UPDATE, DELETE, JOIN)",
+      "Database schema normalization and primary/foreign keys",
+      "Verifiable certificate of completion for resume and LinkedIn",
+      "Beginner-friendly video lessons and quizzes"
+    ]
+  },
+  {
+    "id": "great-learning-cyber-security",
+    "name": "Great Learning: Introduction to Cyber Security",
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-cyber-security",
+    "description": "Foundational overview of cybersecurity concepts, cryptography, network security architectures, ethical hacking methodologies, and digital forensics.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Cybersecurity",
+      "Network Security",
+      "Cryptography",
+      "Ethical Hacking",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "shield-check",
+    "previewImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Understanding common cyber attack vectors and defense systems",
+      "Symmetric and asymmetric encryption essentials",
+      "Free verifiable certificate of completion",
+      "Self-paced video modules by industry practitioners"
+    ]
+  },
+  {
+    "id": "great-learning-git-github",
+    "name": "Great Learning: Git and GitHub Basics",
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/git-tutorial",
+    "description": "Step-by-step video guide to Git version control and GitHub: commits, branches, pull requests, merge conflict resolution, and collaborative workflows.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Git",
+      "GitHub",
+      "Version Control",
+      "Collaboration",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "git-branch",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Essential Git CLI commands (clone, add, commit, push, pull, branch)",
+      "GitHub remote repository collaboration and pull requests",
+      "Verifiable completion certificate from Great Learning Academy",
+      "Practical hands-on repository walkthroughs"
+    ]
+  },
+  {
+    "id": "great-learning-css",
+    "name": "Great Learning: Front End Development - CSS",
+    "url": "https://www.mygreatlearning.com/css/free-courses",
+    "description": "Comprehensive free video course covering CSS fundamentals, styling layouts, CSS box model, positioning, transitions, and responsive web design.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "CSS",
+      "Frontend",
+      "Web Design",
+      "Styling",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "palette",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Styling typography, buttons, navigations, and card layouts",
+      "Mastering CSS selectors, specificity, and cascading rules",
+      "Verifiable certificate of completion",
+      "Self-paced module learning with quiz evaluations"
+    ]
+  },
+  {
+    "id": "great-learning-html",
+    "name": "Great Learning: HTML Tutorial & Fundamentals",
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/html-tutorial",
+    "description": "Beginner-friendly introductory video course covering foundational HTML tags, attributes, formatting, document skeletons, and modern web page structuring.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "HTML",
+      "Web Basics",
+      "Frontend",
+      "Beginner",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "file-code",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "HTML tags, head/body hierarchy, lists, links, and images",
+      "Form inputs, radio buttons, checkboxes, and buttons",
+      "Verifiable certificate of completion for student portfolios",
+      "Zero prior coding experience required"
+    ]
+  },
+  {
+    "id": "ibm-skillsbuild-ai-fundamentals",
+    "name": "IBM SkillsBuild: AI Fundamentals",
+    "url": "https://skillsbuild.org/students/digital-credentials",
+    "description": "Official IBM credential teaching the fundamentals of Artificial Intelligence, machine learning concepts, neural networks, natural language processing, and AI ethics.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "AI Fundamentals",
+      "IBM Credential",
+      "Machine Learning",
+      "AI Ethics",
+      "Free Digital Badge"
+    ],
+    "featured": true,
+    "icon": "sparkles",
+    "previewImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Earn an official, industry-recognized IBM Digital Credential badge via Credly",
+      "Covers natural language processing, computer vision, and generative AI",
+      "AI ethics, bias mitigation, and trustworthiness frameworks",
+      "100% free for students and educators worldwide"
+    ]
+  },
+  {
+    "id": "ibm-skillsbuild-getting-started-data",
+    "name": "IBM SkillsBuild: Getting Started with Data",
+    "url": "https://skillsbuild.org/students/digital-credentials",
+    "description": "Official IBM credential introducing the data analysis lifecycle, data types, statistical concepts, Python data libraries, and visual storytelling.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Data Science",
+      "Python Analytics",
+      "IBM Credential",
+      "Data Visualization",
+      "Free Digital Badge"
+    ],
+    "featured": true,
+    "icon": "bar-chart-2",
+    "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Official IBM Digital Badge issued directly to Credly / LinkedIn",
+      "Introductory data analytics, visualization, and interpretation",
+      "Understanding big data ecosystems and data-driven decision making",
+      "Self-paced curriculum designed specifically for students"
+    ]
+  },
+  {
+    "id": "ibm-web-dev-fundamentals",
+    "name": "IBM: Web Development Fundamentals Badge",
+    "url": "https://www.ibm.com/training/badge/web-development-fundamentals",
+    "description": "Official IBM credential validating foundational mastery of full-stack web development, client-server architectures, HTML5, CSS3, JavaScript, and cloud hosting.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Web Development",
+      "IBM Badge",
+      "HTML/CSS/JS",
+      "Full Stack",
+      "Free Credential"
+    ],
+    "featured": true,
+    "icon": "award",
+    "previewImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Earn an official IBM Web Development Fundamentals digital badge",
+      "Comprehensive architectural overview from front-end to backend servers",
+      "Covers web security, responsive design, and API communications",
+      "Verifiable digital credential on Credly"
+    ]
+  },
+  {
+    "id": "ms-learn-intro-to-git",
+    "name": "Microsoft Learn: Introduction to Git",
+    "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-git/",
+    "description": "Official Microsoft interactive module on using Git for distributed version control, tracking changes, staging commits, managing branches, and resolving merge conflicts.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "Git",
+      "Microsoft Learn",
+      "Version Control",
+      "Terminal",
+      "Free Module"
+    ],
+    "featured": false,
+    "icon": "git-commit",
+    "previewImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Interactive browser sandbox with live cloud terminal",
+      "Covers repository initialization, staging, committing, and branching",
+      "Earn Microsoft Learn XP and module completion trophies",
+      "100% free and integrated with GitHub workflows"
+    ]
+  },
+  {
+    "id": "scholarhat-html-course",
+    "name": "ScholarHat: Free Online HTML Course",
+    "url": "https://www.scholarhat.com/free-course/html-course",
+    "description": "Free structured HTML5 certification course covering basic to advanced web page markup, HTML5 semantic elements, forms, canvas, and multimedia integration.",
+    "category": "certifications",
+    "categoryName": "Free Certifications & Courses",
+    "pricing": "Free",
+    "tags": [
+      "HTML5",
+      "ScholarHat",
+      "Web Development",
+      "Frontend",
+      "Free Certificate"
+    ],
+    "featured": false,
+    "icon": "file-text",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Comprehensive HTML5 curriculum with code exercises and examples",
+      "Quizzes and practical hands-on assessments",
+      "Verifiable course completion certificate",
+      "Designed by Microsoft MVP certified instructors"
+    ]
+  },
+  {
+    "id": "google-one",
+    "name": "Google One & Gemini Advanced",
+    "url": "https://one.google.com/",
+    "description": "Google's cloud storage and AI subscription offering 15GB free cloud storage across Drive, Gmail, and Photos, plus exclusive student trial promotions for Gemini Advanced with 2TB storage.",
+    "category": "student-perks",
+    "categoryName": "Student Perks & Free Tiers",
+    "pricing": "Freemium",
+    "tags": [
+      "Google",
+      "Google One",
+      "Cloud Storage",
+      "Gemini Advanced",
+      "Drive",
+      "Student Perk"
+    ],
+    "featured": true,
+    "icon": "cloud",
+    "previewImage": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "15GB free cloud storage across Google Drive, Gmail, and Google Photos",
+      "Gemini 1.5 Pro AI model integration inside Google Docs, Sheets, and Gmail",
+      "Automatic multi-device device backup, encryption, and family sharing",
+      "Student trial perks and promotional discounts on 2TB AI Premium plans"
+    ],
+    "studentPerk": "Free 15GB lifetime storage + promotional student access to Google One AI Premium & Gemini Advanced"
+  },
+  {
+    "id": "ilovepdf",
+    "name": "iLovePDF",
+    "url": "https://www.ilovepdf.com/",
+    "description": "All-in-one web toolkit to merge, split, compress, convert, edit, and sign PDF documents directly in the browser with zero software installation.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Freemium",
+    "tags": [
+      "PDF Tools",
+      "Document Conversion",
+      "Compression",
+      "OCR",
+      "Productivity"
+    ],
+    "featured": true,
+    "icon": "file-text",
+    "previewImage": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Merge, split, and compress large PDF files",
+      "Convert PDF to Word, Excel, PowerPoint, and JPG",
+      "OCR text recognition and PDF encryption/unlocking",
+      "100% free web-based processing"
+    ],
+    "studentPerk": "Generous free tier with batch file processing for academic assignments"
+  },
+  {
+    "id": "figma",
+    "name": "Figma & FigJam",
+    "url": "https://www.figma.com/",
+    "description": "Industry-standard collaborative interface design and prototyping tool featuring vector networks, design systems, auto-layout, and interactive FigJam whiteboards.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Free with Student ID",
+    "tags": [
+      "UI/UX Design",
+      "Prototyping",
+      "Wireframing",
+      "FigJam",
+      "Collaboration"
+    ],
+    "featured": true,
+    "icon": "figma",
+    "previewImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time multi-user multiplayer canvas collaboration",
+      "Advanced auto-layout, design tokens, and component variants",
+      "Interactive prototyping with transitions and smart animate",
+      "Massive community plugin ecosystem and design system libraries"
+    ],
+    "studentPerk": "100% Free Figma Professional plan for students and educators with verified school email"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "url": "https://www.canva.com/",
+    "description": "Intuitive visual design platform for creating pitch decks, project presentations, system architecture infographics, posters, and resume graphics.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Freemium",
+    "tags": [
+      "Graphic Design",
+      "Presentations",
+      "Infographics",
+      "Posters",
+      "Social Media"
+    ],
+    "featured": true,
+    "icon": "palette",
+    "previewImage": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Thousands of curated templates for presentations and documents",
+      "Drag-and-drop graphic editor with rich asset libraries",
+      "Brand kits, background remover, and chart visualizers",
+      "Collaborative team editing and export to PDF/PNG/PPTX"
+    ],
+    "studentPerk": "Free educational tier and student discounts via Canva for Education"
+  },
+  {
+    "id": "draw-io",
+    "name": "Draw.io (diagrams.net)",
+    "url": "https://app.diagrams.net/",
+    "description": "Free and open-source diagramming software for building flowcharts, UML diagrams, database ER schemas, network topologies, and software architecture specs.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Open Source",
+    "tags": [
+      "Diagrams",
+      "Flowcharts",
+      "UML",
+      "ER Diagrams",
+      "System Architecture",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "git-commit",
+    "previewImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "100% free with no account or subscription required",
+      "Built-in shape libraries for AWS, GCP, Azure, Cisco, and UML",
+      "Direct storage integration with Google Drive, GitHub, and OneDrive",
+      "Export to SVG, PNG, PDF, and XML schema definitions"
+    ]
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "description": "Virtual collaborative whiteboard with a charming hand-drawn aesthetic, ideal for sketching software architectures, system design interviews, and wireframes.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Open Source",
+    "tags": [
+      "Whiteboard",
+      "System Design",
+      "Hand-drawn",
+      "Wireframing",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "pen-tool",
+    "previewImage": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Hand-drawn sketch aesthetic with infinite zoomable canvas",
+      "Real-time end-to-end encrypted collaboration sessions",
+      "Extensive community shape libraries for frontend and cloud architecture",
+      "Export clean SVGs or embed directly into markdown and GitHub READMEs"
+    ]
+  },
+  {
+    "id": "carbon",
+    "name": "Carbon",
+    "url": "https://carbon.now.sh/",
+    "description": "Create and share beautiful, customizable, syntax-highlighted images of your source code for documentation, presentations, tutorials, and social media.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Free",
+    "tags": [
+      "Code Screenshots",
+      "Syntax Highlighting",
+      "Developer Tool",
+      "Snippets",
+      "Presentation"
+    ],
+    "featured": false,
+    "icon": "code",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Syntax highlighting for 100+ programming languages",
+      "Customizable window themes, padding, fonts, and drop shadows",
+      "Export to vector SVG or high-DPI PNG with one click",
+      "Direct tweet and GitHub Gist integration"
+    ]
+  },
+  {
+    "id": "regex101",
+    "name": "Regex101",
+    "url": "https://regex101.com/",
+    "description": "Interactive regular expression tester and real-time debugger supporting PCRE, Python, JavaScript, Golang, and Java flavors with automated step-by-step regex breakdowns.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Free",
+    "tags": [
+      "Regex",
+      "Regular Expressions",
+      "Debugger",
+      "Tester",
+      "Developer Utility"
+    ],
+    "featured": false,
+    "icon": "search",
+    "previewImage": "https://images.unsplash.com/photo-1516116211227-bbc17c385c78?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Real-time regex syntax highlighting and match group visualizer",
+      "Detailed plain-English regex logic explanation",
+      "Interactive regex debugger and performance step counter",
+      "Searchable community regex library with unit test creation"
+    ]
+  },
+  {
+    "id": "devdocs",
+    "name": "DevDocs",
+    "url": "https://devdocs.io/",
+    "description": "Fast, clean, and offline-capable unified documentation browser combining 100+ programming language and framework docs in a single lightning-fast web app.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Open Source",
+    "tags": [
+      "API Documentation",
+      "Offline Docs",
+      "Developer Reference",
+      "Search",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "book-open",
+    "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant fuzzy search across JavaScript, Python, Rust, React, Go, and 100+ docs",
+      "Works 100% offline via local IndexedDB caching",
+      "Clean, distraction-free reading interface with dark mode",
+      "Keyboard-driven navigation for maximum developer ergonomics"
+    ]
+  },
+  {
+    "id": "tinypng",
+    "name": "TinyPNG",
+    "url": "https://tinypng.com/",
+    "description": "Smart lossy compression algorithm that reduces the file size of WebP, PNG, and JPEG images by up to 70% while preserving high visual quality and transparency.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Freemium",
+    "tags": [
+      "Image Compression",
+      "WebP",
+      "PNG",
+      "JPEG",
+      "Web Performance",
+      "Optimization"
+    ],
+    "featured": false,
+    "icon": "image",
+    "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Reduces web image asset payloads for faster website load times",
+      "Preserves alpha channel transparency in PNG and WebP files",
+      "Batch upload up to 20 images at once",
+      "Official developer REST API and Photoshop plugin"
+    ]
+  },
+  {
+    "id": "transform-tools",
+    "name": "Transform.tools",
+    "url": "https://transform.tools/",
+    "description": "All-in-one polyglot code converter turning JSON into TypeScript types, SVG into React JSX, HTML into JSX, CSS into Tailwind, and GraphQL into schema types instantly.",
+    "category": "online-tools",
+    "categoryName": "Online Tools & Utilities",
+    "pricing": "Open Source",
+    "tags": [
+      "Code Converter",
+      "JSON to TS",
+      "SVG to JSX",
+      "GraphQL",
+      "Polyglot",
+      "Open Source"
+    ],
+    "featured": true,
+    "icon": "code-2",
+    "previewImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "keyFeatures": [
+      "Instant client-side conversion between 20+ frontend formats",
+      "JSON to TypeScript, Rust structs, Go structs, and Kotlin models",
+      "SVG to React / React Native / Vue / Svelte components",
+      "100% browser-based with zero data sent to external servers"
+    ]
+  }
+]

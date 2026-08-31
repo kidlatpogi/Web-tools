@@ -1,0 +1,17 @@
+# Web-Tools
+> An exhaustive, research-backed directory compiling essential developer utilities, IDEs, AI coding assistants, free CS certifications, UI inspiration, typography, and student perks.
+
+## Main Links
+- Homepage & Directory: https://web-tools.pages.dev/
+- Creator Portfolio: https://portfolio.kidlat.workers.dev/
+- GitHub Repository: https://github.com/kidlatpogi/Web-tools
+
+## Curated Domains
+- IDEs & Code Editors (Cursor, VS Code, Windsurf, Zed, Neovim)
+- AI Agents & Coding Assistants (Claude Code, GitHub Copilot, Manus AI, Google AI Studio)
+- AI Chatbots & Models (ChatGPT, Claude, Gemini, DeepSeek, Perplexity, Kimi AI)
+- Design Inspiration & UI Tools (Mobbin, Godly, Shadcn UI, React Bits, Laws of UX)
+- Free Certifications & Courses (Cisco NetAcad, freeCodeCamp, Harvard CS50, IBM SkillsBuild)
+- Fonts, Logos & Design Assets (Google Fonts, Fontshare, Fonts In Use, Coolors, SVGL)
+- Student Perks & Free Tiers (GitHub Student Developer Pack, Google One, Supabase)
+- Online Tools & Utilities (iLovePDF, Figma, Canva, Draw.io, Excalidraw, DevDocs, Regex101, Transform.tools)

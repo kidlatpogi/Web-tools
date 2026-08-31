@@ -1,0 +1,15 @@
+/**
+* @license
+*
+* Font Family: Array (Local Offline Version)
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/array
+*
+*/
+@font-face {
+  font-family: 'Array-Semibold';
+  src: url('/fonts/Array-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
